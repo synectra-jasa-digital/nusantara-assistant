@@ -11,9 +11,7 @@ export default function CodeBlock({ code, label = 'Terminal' }) {
       await navigator.clipboard.writeText(code)
       setCopied(true)
       setTimeout(() => setCopied(false), 1500)
-    } catch {
-      // clipboard access can be blocked, fail silently
-    }
+    } catch {}
   }
 
   return (

@@ -1,8 +1,6 @@
 import Icon from '../Icon.jsx'
 import { useLanguage } from '../../i18n/LanguageContext.jsx'
 
-// Expects the shape returned by BMKG's autogempa/gempaterkini JSON:
-// { Tanggal, Jam, Magnitude, Kedalaman, Wilayah, Potensi }
 export default function EarthquakeCard({ data }) {
   const { t } = useLanguage()
 

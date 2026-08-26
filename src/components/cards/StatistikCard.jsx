@@ -1,7 +1,6 @@
 import Icon from '../Icon.jsx'
 import { useLanguage } from '../../i18n/LanguageContext.jsx'
 
-// Expects: { indicator, value, unit, period, region }
 export default function StatistikCard({ data }) {
   const { t } = useLanguage()
 

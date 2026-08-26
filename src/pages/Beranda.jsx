@@ -15,10 +15,8 @@ export default function Beranda() {
 
   return (
     <main className="relative mx-auto flex w-full max-w-container-max flex-col items-center px-base py-8 md:px-md md:py-16">
-      {/* Background Decorative Glow */}
       <div className="absolute top-10 left-1/2 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-primary-container/20 blur-3xl" />
 
-      {/* Hero Section */}
       <section className="flex w-full max-w-4xl flex-col items-center text-center">
         <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold text-primary shadow-xs">
           <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
@@ -52,7 +50,6 @@ export default function Beranda() {
         </div>
       </section>
 
-      {/* Categories Grid */}
       <section className="mt-16 w-full">
         <div className="mb-6 text-center">
           <h2 className="text-xs font-bold uppercase tracking-wider text-outline">Sumber Data Terintegrasi</h2>

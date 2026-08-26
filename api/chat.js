@@ -1,12 +1,3 @@
-// Vercel serverless function - POST /api/chat
-// Runs a tool-use loop against GPT-OSS (via Groq's OpenAI-compatible
-// endpoint): send the conversation + tool schemas, execute whichever tools
-// the model asks for, feed results back, repeat until it returns a plain
-// text answer. Non-streaming by design, to keep the tool-loop logic simple
-// and easy to debug.
-//
-// No database: each request is stateless, the full conversation is sent
-// by the client every time (see src/pages/Chat.jsx).
 import { toolSchemas } from '../lib/toolSchemas.js'
 import { runTool } from '../lib/toolDispatcher.js'
 
@@ -23,18 +14,34 @@ Statistik BPS: get_statistic butuh domain_code (kode wilayah versi BPS) dan var_
 
 Jawab singkat, jelas, ramah, dan terasa hidup seperti ngobrol - boleh tutup dengan tawaran follow-up yang relevan (mis. "mau cek prakiraan besok juga?"), dalam bahasa yang sama dengan pertanyaan user.`
 
+const SELF_CHECK_PROMPT = `Cek ulang balasanmu barusan terhadap hasil tool yang sudah kamu dapat di percakapan ini. Kalau ada angka, nama wilayah/level, atau fakta yang meleset dari data tool, atau kamu menyebut sesuatu yang tidak ada di data tool, revisi balasannya sekarang. Kalau sudah akurat, tulis ulang balasan yang sama persis. Jangan panggil tool lagi, jawab teks saja.`
+
 const MAX_TOOL_ROUNDS = 6
 const GROQ_BASE_URL = 'https://api.groq.com/openai/v1'
 const GROQ_MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-120b'
 
-// toolSchemas is kept in the Anthropic/JSON-Schema shape (name, description,
-// input_schema) since that's reused as-is for a future MCP server. Groq's
-// endpoint speaks the OpenAI function-calling shape, so adapt it here at
-// the edge.
 const openAiTools = toolSchemas.map((tool) => ({
   type: 'function',
   function: { name: tool.name, description: tool.description, parameters: tool.input_schema },
 }))
+
+async function callGroq(apiKey, conversation, { withTools } = {}) {
+  const response = await fetch(`${GROQ_BASE_URL}/chat/completions`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+    body: JSON.stringify({
+      model: GROQ_MODEL,
+      messages: conversation,
+      ...(withTools ? { tools: openAiTools } : {}),
+    }),
+  })
+
+  if (!response.ok) {
+    throw new Error(`Groq request failed: ${response.status} ${await response.text()}`)
+  }
+
+  return response.json()
+}
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -59,27 +66,27 @@ export default async function handler(req, res) {
 
   try {
     for (let round = 0; round < MAX_TOOL_ROUNDS; round++) {
-      const response = await fetch(`${GROQ_BASE_URL}/chat/completions`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
-        body: JSON.stringify({ model: GROQ_MODEL, messages: conversation, tools: openAiTools }),
-      })
-
-      if (!response.ok) {
-        throw new Error(`Groq request failed: ${response.status} ${await response.text()}`)
-      }
-
-      const data = await response.json()
+      const data = await callGroq(apiKey, conversation, { withTools: true })
       const message = data.choices[0].message
       const toolCalls = message.tool_calls ?? []
 
       if (toolCalls.length === 0) {
-        res.status(200).json({ reply: message.content ?? '', cards })
+        let reply = message.content ?? ''
+
+        if (reply && cards.length > 0) {
+          const checkConversation = [
+            ...conversation,
+            { role: 'assistant', content: reply },
+            { role: 'user', content: SELF_CHECK_PROMPT },
+          ]
+          const checkData = await callGroq(apiKey, checkConversation)
+          reply = checkData.choices[0].message.content ?? reply
+        }
+
+        res.status(200).json({ reply, cards })
         return
       }
 
-      // Model wants to call one or more tools - run them, collect any
-      // cards for the frontend, then continue the loop with the results.
       conversation.push({ role: 'assistant', content: message.content ?? null, tool_calls: toolCalls })
 
       for (const call of toolCalls) {

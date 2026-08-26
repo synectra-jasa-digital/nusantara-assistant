@@ -1,9 +1,6 @@
 import Icon from '../Icon.jsx'
 import { useLanguage } from '../../i18n/LanguageContext.jsx'
 
-// Expects: { currency, buy, sell, date, source }
-// `source` documents which wsKursBI operation the number came from, since
-// BI publishes several distinct rate types (JISDOR, transaksi, UKA).
 export default function KursCard({ data }) {
   const { t } = useLanguage()
 

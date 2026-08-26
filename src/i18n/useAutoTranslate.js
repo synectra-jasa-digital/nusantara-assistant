@@ -14,15 +14,9 @@ function loadCache() {
 function saveCache(cache) {
   try {
     window.localStorage.setItem(CACHE_KEY, JSON.stringify(cache))
-  } catch {
-    // storage full or unavailable, cache just won't persist
-  }
+  } catch {}
 }
 
-// Auto-translates Indonesian strings to English via /api/translate for
-// content that isn't in the static translations.js dictionary (mainly
-// docs body copy). Falls back to the original Indonesian text while
-// loading or if the request fails, so the page never breaks.
 export function useAutoTranslate(texts) {
   const { lang } = useLanguage()
   const [translated, setTranslated] = useState(texts)
@@ -65,7 +59,6 @@ export function useAutoTranslate(texts) {
     return () => {
       cancelled = true
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- texts compared by content, not reference
   }, [lang, JSON.stringify(texts)])
 
   return translated

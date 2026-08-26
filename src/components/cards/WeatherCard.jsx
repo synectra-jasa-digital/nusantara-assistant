@@ -1,8 +1,6 @@
 import Icon from '../Icon.jsx'
 import { useLanguage } from '../../i18n/LanguageContext.jsx'
 
-// Expects `data` shaped like the parsed BMKG prakiraan-cuaca payload:
-// { location, datetime, weather_desc, temperature, humidity, wind_speed }
 export default function WeatherCard({ data }) {
   const { t } = useLanguage()
 

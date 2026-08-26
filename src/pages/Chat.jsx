@@ -50,7 +50,6 @@ export default function Chat() {
 
   return (
     <main className="mx-auto flex h-[calc(100vh-64px)] w-full max-w-container-max overflow-hidden">
-      {/* Sidebar Suggestions (Desktop) */}
       <aside className="hidden h-full w-80 shrink-0 flex-col overflow-y-auto border-r border-outline-variant/40 bg-surface-container-low/40 p-5 lg:flex">
         <div className="mb-6">
           <div className="mb-2 flex items-center gap-2 text-primary font-bold text-base">
@@ -72,7 +71,6 @@ export default function Chat() {
         </div>
       </aside>
 
-      {/* Main Chat Feed */}
       <section className="relative flex flex-1 flex-col bg-background">
         <div className="flex-1 space-y-4 overflow-y-auto p-4 sm:p-6">
           {messages.length === 0 && (
@@ -107,7 +105,6 @@ export default function Chat() {
           <div ref={scrollRef} />
         </div>
 
-        {/* Input Bar Container */}
         <div className="z-10 w-full shrink-0 border-t border-outline-variant/40 bg-surface/90 p-3 backdrop-blur-md sm:p-4">
           <ChatInput onSend={sendMessage} disabled={isLoading} />
           <p className="mt-2 text-center text-[11px] text-outline">{t('chat_disclaimer')}</p>

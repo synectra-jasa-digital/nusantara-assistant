@@ -1,6 +1,3 @@
-// Simple flat dictionary, no external i18n library needed for a project
-// this size. Add keys here as the UI grows. Long-form docs body copy is
-// translated at runtime instead - see useAutoTranslate.js.
 export const translations = {
   id: {
     appName: 'Data Nusantara Assistant',

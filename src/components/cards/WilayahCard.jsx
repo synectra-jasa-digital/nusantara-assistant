@@ -1,6 +1,5 @@
 import Icon from '../Icon.jsx'
 
-// Expects: { code, name, level, breadcrumb: string[] }
 export default function WilayahCard({ data }) {
   return (
     <div className="mt-3 w-full rounded-xl border border-outline-variant bg-surface-bright p-sm">

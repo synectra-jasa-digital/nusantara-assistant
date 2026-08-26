@@ -9,9 +9,7 @@ function getInitialLang() {
   try {
     const stored = window.localStorage.getItem(STORAGE_KEY)
     if (stored === 'id' || stored === 'en') return stored
-  } catch {
-    // localStorage can be unavailable (private mode, etc). Fall back below.
-  }
+  } catch {}
   return 'id'
 }
 
@@ -22,9 +20,7 @@ export function LanguageProvider({ children }) {
     setLang(next)
     try {
       window.localStorage.setItem(STORAGE_KEY, next)
-    } catch {
-      // ignore write failures, language just won't persist
-    }
+    } catch {}
   }, [])
 
   const toggleLanguage = useCallback(() => {

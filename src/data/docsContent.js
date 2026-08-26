@@ -1,7 +1,3 @@
-// Static documentation content. Kept in Indonesian for now - the header
-// chrome (nav, buttons) is bilingual via i18n, translating this much body
-// copy is a good follow-up once the content itself stabilizes.
-
 export const docsSections = [
   {
     id: 'pengenalan',

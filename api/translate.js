@@ -1,8 +1,3 @@
-// Vercel serverless function - POST /api/translate
-// Auto-translates Indonesian docs/UI copy to English on demand, via the
-// free, keyless google-translate-api-x. Used only for content that isn't
-// in src/i18n/translations.js (mainly long-form docs body copy) - the
-// client caches results in localStorage so this only runs once per string.
 import translate from 'google-translate-api-x'
 
 export default async function handler(req, res) {

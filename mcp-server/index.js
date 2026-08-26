@@ -1,10 +1,4 @@
 #!/usr/bin/env node
-// MCP server exposing lib/tools/* as MCP tools over stdio, for direct use
-// from Claude Desktop or Claude Code - see docs "Konfigurasi MCP" page for
-// the client config. Reuses the same toolSchemas + toolDispatcher that
-// api/chat.js uses for the DashScope/Groq tool-calling loop; toolSchemas is
-// already plain JSON Schema, which is exactly the shape MCP's inputSchema
-// expects, so no translation layer is needed here.
 import { Server } from '@modelcontextprotocol/sdk/server/index.js'
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { ListToolsRequestSchema, CallToolRequestSchema } from '@modelcontextprotocol/sdk/types.js'

@@ -1,9 +1,7 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
-      // "Nusantara Bright" design tokens - matches stitch/nusantara_bright/DESIGN.md
       colors: {
         'on-tertiary-container': '#6d3000',
         'secondary-container': '#feb700',

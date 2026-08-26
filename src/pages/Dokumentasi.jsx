@@ -33,7 +33,6 @@ export default function Dokumentasi() {
 
   return (
     <div className="mx-auto flex w-full max-w-container-max flex-col">
-      {/* Mobile Top Controls Bar */}
       <div className="sticky top-16 z-30 flex items-center justify-between border-b border-outline-variant/40 bg-surface/90 px-base py-2.5 backdrop-blur-md md:hidden">
         <button
           type="button"
@@ -55,7 +54,6 @@ export default function Dokumentasi() {
       </div>
 
       <div className="flex flex-1">
-        {/* Mobile Backdrop */}
         {mobileNavOpen && (
           <div
             className="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-xs transition-opacity md:hidden"
@@ -63,7 +61,6 @@ export default function Dokumentasi() {
           />
         )}
 
-        {/* Sidebar */}
         <aside
           className={`fixed inset-y-0 left-0 z-50 flex w-80 flex-col bg-surface p-4 shadow-2xl transition-transform duration-300 md:sticky md:top-16 md:z-0 md:h-[calc(100vh-64px)] md:w-72 md:translate-x-0 md:border-r md:border-outline-variant/40 md:bg-surface-container-low/50 md:shadow-none ${
             mobileNavOpen ? 'translate-x-0' : '-translate-x-full'
@@ -107,9 +104,7 @@ export default function Dokumentasi() {
           </div>
         </aside>
 
-        {/* Main Docs Content */}
         <main className="min-w-0 flex-1 p-base sm:p-md md:p-lg lg:p-xl">
-          {/* Breadcrumb */}
           <div className="mb-4 flex items-center gap-2 text-xs text-on-surface-variant">
             <span className="font-medium text-outline">{t('docs_title')}</span>
             <Icon name="chevron_right" className="text-xs" />
