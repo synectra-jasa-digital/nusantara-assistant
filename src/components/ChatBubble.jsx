@@ -1,3 +1,4 @@
+import { Suspense, lazy } from 'react'
 import { useLanguage } from '../i18n/LanguageContext.jsx'
 import Icon from './Icon.jsx'
 import WeatherCard from './cards/WeatherCard.jsx'
@@ -6,12 +7,15 @@ import KursCard from './cards/KursCard.jsx'
 import WilayahCard from './cards/WilayahCard.jsx'
 import StatistikCard from './cards/StatistikCard.jsx'
 
+const ChartCard = lazy(() => import('./cards/ChartCard.jsx'))
+
 const CARD_COMPONENTS = {
   weather: WeatherCard,
   earthquake: EarthquakeCard,
   kurs: KursCard,
   wilayah: WilayahCard,
   statistik: StatistikCard,
+  chart: ChartCard,
 }
 
 export default function ChatBubble({ role, content, cards = [] }) {
@@ -43,7 +47,9 @@ export default function ChatBubble({ role, content, cards = [] }) {
           if (!CardComponent) return null
           return (
             <div key={i} className="mt-3">
-              <CardComponent data={card.data} />
+              <Suspense fallback={null}>
+                <CardComponent data={card.data} />
+              </Suspense>
             </div>
           )
         })}

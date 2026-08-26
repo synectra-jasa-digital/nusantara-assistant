@@ -44,8 +44,11 @@ npm run dev
 | `GROQ_MODEL`         | Tidak | Default `openai/gpt-oss-120b` kalau tidak diisi                   |
 | `BPS_API_KEY`        | Untuk tool statistik | Daftar gratis di https://webapi.bps.go.id/developer/ |
 
-BMKG, wilayah.id, dan endpoint kurs JISDOR Bank Indonesia tidak butuh API
-key.
+BMKG dan endpoint kurs JISDOR Bank Indonesia tidak butuh API key. Data
+wilayah administratif (`lib/tools/wilayah.js`) dibundel lokal sebagai CSV
+(`lib/data/wilayah/`, sumber: Permendagri 72/2019 via
+github.com/guzfirdaus/Wilayah-Administrasi-Indonesia) - tidak ada
+network call sama sekali, jadi tidak butuh key dan tidak kena rate limit.
 
 ## Deploy ke Vercel
 
@@ -61,12 +64,12 @@ API di proyek ini (terutama BPS, kemungkinan juga BMKG dan BI) diketahui
 memblokir permintaan dari IP milik penyedia cloud besar seperti AWS/GCP,
 yang mana Vercel serverless function berjalan di atasnya. Ini bukan
 asumsi, sudah terverifikasi langsung: saat proyek ini disusun, panggilan
-ke `wilayah.id/api/provinces.json` dan
-`data.bmkg.go.id/DataMKG/TEWS/autogempa.json` dari sandbox cloud (IP
-datacenter) sama-sama mengembalikan `403 Forbidden`, padahal endpoint dan
+ke `data.bmkg.go.id/DataMKG/TEWS/autogempa.json` dari sandbox cloud (IP
+datacenter) mengembalikan `403 Forbidden`, padahal endpoint dan
 formatnya sudah benar sesuai dokumentasi resmi. Ini bisa membuat kode yang
 jalan mulus di komputer lokal kamu (IP rumah/kampus) tiba-tiba gagal fetch
-setelah di-deploy ke Vercel.
+setelah di-deploy ke Vercel. (Data wilayah administratif sudah tidak
+kena isu ini lagi sejak dipindah ke CSV lokal.)
 
 Cara mengeceknya: buka Vercel dashboard → Deployments → pilih deployment →
 Functions → lihat log `api/chat`. Kalau errornya berbentuk timeout atau

@@ -18,6 +18,7 @@ export const translations = {
     category_statistik_desc: 'Indikator ekonomi, kependudukan, dan data statistik BPS lainnya.',
     chat_placeholder: 'Tanyakan seputar data Indonesia...',
     chat_send: 'Kirim',
+    chat_stop: 'Hentikan',
     chat_empty_title: 'Halo! Ada yang bisa saya bantu?',
     chat_empty_subtitle: 'Tanyakan tentang cuaca, data penduduk, ekonomi, atau informasi wilayah di seluruh Indonesia.',
     chat_examples: [
@@ -77,6 +78,7 @@ export const translations = {
     category_statistik_desc: 'Economic, demographic, and other official BPS statistics.',
     chat_placeholder: 'Ask about Indonesian data...',
     chat_send: 'Send',
+    chat_stop: 'Stop',
     chat_empty_title: 'Hi! How can I help?',
     chat_empty_subtitle: 'Ask about weather, population data, economics, or regional info across Indonesia.',
     chat_examples: [

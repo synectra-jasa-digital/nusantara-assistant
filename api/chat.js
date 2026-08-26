@@ -12,6 +12,8 @@ Kurs Bank Indonesia: get_exchange_rate butuh kode mata uang 3 huruf (ISO 4217). 
 
 Statistik BPS: get_statistic butuh domain_code (kode wilayah versi BPS) dan var_id (ID variabel dari katalog BPS). Kalau butuh domain_code untuk suatu wilayah, panggil get_region_info dulu lalu hilangkan tanda titik dari field code-nya (mis. wilayah code "32.73" jadi domain_code "3273"); untuk level provinsi tambahkan "00" di belakang (mis. "32" jadi domain_code "3200"). var_id tidak bisa diturunkan dari wilayah - kalau kamu tidak yakin var_id yang tepat untuk variabel yang ditanya, jangan menebak: bilang terus terang ke user kamu tidak punya ID variabel itu di katalog BPS, jangan panggil get_statistic dengan var_id sembarangan.
 
+Perbandingan: kalau user minta bandingkan cuaca atau statistik antara 2+ wilayah, panggil tool yang relevan (get_weather atau get_statistic) sekali per wilayah secara berurutan, baru jawab dengan ringkasan perbandingannya.
+
 Jawab singkat, jelas, ramah, dan terasa hidup seperti ngobrol - boleh tutup dengan tawaran follow-up yang relevan (mis. "mau cek prakiraan besok juga?"), dalam bahasa yang sama dengan pertanyaan user.`
 
 const SELF_CHECK_PROMPT = `Cek ulang balasanmu barusan terhadap hasil tool yang sudah kamu dapat di percakapan ini. Kalau ada angka, nama wilayah/level, atau fakta yang meleset dari data tool, atau kamu menyebut sesuatu yang tidak ada di data tool, revisi balasannya sekarang. Kalau sudah akurat, tulis ulang balasan yang sama persis. Jangan panggil tool lagi, jawab teks saja.`
@@ -43,6 +45,95 @@ async function callGroq(apiKey, conversation, { withTools } = {}) {
   return response.json()
 }
 
+async function streamGroqText(apiKey, conversation, onDelta) {
+  const response = await fetch(`${GROQ_BASE_URL}/chat/completions`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+    body: JSON.stringify({ model: GROQ_MODEL, messages: conversation, stream: true }),
+  })
+
+  if (!response.ok) {
+    throw new Error(`Groq request failed: ${response.status} ${await response.text()}`)
+  }
+
+  const reader = response.body.getReader()
+  const decoder = new TextDecoder()
+  let buffer = ''
+  let full = ''
+
+  while (true) {
+    const { done, value } = await reader.read()
+    if (done) break
+    buffer += decoder.decode(value, { stream: true })
+    const parts = buffer.split('\n\n')
+    buffer = parts.pop()
+
+    for (const part of parts) {
+      const trimmed = part.trim()
+      if (!trimmed.startsWith('data:')) continue
+      const payload = trimmed.slice(5).trim()
+      if (!payload || payload === '[DONE]') continue
+      const json = JSON.parse(payload)
+      const delta = json.choices?.[0]?.delta?.content
+      if (delta) {
+        full += delta
+        onDelta(delta)
+      }
+    }
+  }
+
+  return full
+}
+
+function fakeStream(text, onDelta) {
+  return new Promise((resolve) => {
+    if (!text) {
+      resolve()
+      return
+    }
+    const chunkSize = 4
+    let i = 0
+    const interval = setInterval(() => {
+      onDelta(text.slice(i, i + chunkSize))
+      i += chunkSize
+      if (i >= text.length) {
+        clearInterval(interval)
+        resolve()
+      }
+    }, 12)
+  })
+}
+
+function buildComparisonCharts(cards) {
+  const charts = []
+
+  const weatherCards = cards.filter((c) => c.type === 'weather')
+  if (weatherCards.length >= 2) {
+    charts.push({
+      type: 'chart',
+      data: {
+        title: 'Perbandingan Suhu',
+        unit: '°C',
+        series: weatherCards.map((c) => ({ label: c.data.city || c.data.location || '-', value: c.data.temperature })),
+      },
+    })
+  }
+
+  const statistikCards = cards.filter((c) => c.type === 'statistik')
+  if (statistikCards.length >= 2) {
+    charts.push({
+      type: 'chart',
+      data: {
+        title: statistikCards[0]?.data?.indicator || 'Perbandingan Statistik',
+        unit: statistikCards[0]?.data?.unit || '',
+        series: statistikCards.map((c) => ({ label: c.data.region || '-', value: Number(c.data.value) })),
+      },
+    })
+  }
+
+  return charts
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' })
@@ -71,19 +162,31 @@ export default async function handler(req, res) {
       const toolCalls = message.tool_calls ?? []
 
       if (toolCalls.length === 0) {
-        let reply = message.content ?? ''
+        const draftReply = message.content ?? ''
+        const allCards = [...cards, ...buildComparisonCharts(cards)]
 
-        if (reply && cards.length > 0) {
+        res.writeHead(200, {
+          'Content-Type': 'text/event-stream',
+          'Cache-Control': 'no-cache',
+          Connection: 'keep-alive',
+        })
+
+        const send = (delta) => res.write(`data: ${JSON.stringify({ delta })}\n\n`)
+
+        let finalReply = draftReply
+        if (draftReply && cards.length > 0) {
           const checkConversation = [
             ...conversation,
-            { role: 'assistant', content: reply },
+            { role: 'assistant', content: draftReply },
             { role: 'user', content: SELF_CHECK_PROMPT },
           ]
-          const checkData = await callGroq(apiKey, checkConversation)
-          reply = checkData.choices[0].message.content ?? reply
+          finalReply = await streamGroqText(apiKey, checkConversation, send)
+        } else {
+          await fakeStream(draftReply, send)
         }
 
-        res.status(200).json({ reply, cards })
+        res.write(`data: ${JSON.stringify({ done: true, cards: allCards, reply: finalReply })}\n\n`)
+        res.end()
         return
       }
 
@@ -103,6 +206,11 @@ export default async function handler(req, res) {
     })
   } catch (err) {
     console.error('chat handler error:', err)
-    res.status(500).json({ error: 'Terjadi kesalahan di server.' })
+    if (res.headersSent) {
+      res.write(`data: ${JSON.stringify({ error: 'Terjadi kesalahan di server.' })}\n\n`)
+      res.end()
+    } else {
+      res.status(500).json({ error: 'Terjadi kesalahan di server.' })
+    }
   }
 }

@@ -12,6 +12,7 @@ export default function Chat() {
   const [messages, setMessages] = useState([])
   const [isLoading, setIsLoading] = useState(false)
   const scrollRef = useRef(null)
+  const abortControllerRef = useRef(null)
 
   useEffect(() => {
     scrollRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -22,6 +23,9 @@ export default function Chat() {
     setMessages(nextMessages)
     setIsLoading(true)
 
+    const controller = new AbortController()
+    abortControllerRef.current = controller
+
     try {
       const res = await fetch('/api/chat', {
         method: 'POST',
@@ -29,21 +33,72 @@ export default function Chat() {
         body: JSON.stringify({
           messages: nextMessages.map(({ role, content }) => ({ role, content })),
         }),
+        signal: controller.signal,
       })
 
-      if (!res.ok) throw new Error(`Request failed: ${res.status}`)
-      const data = await res.json()
+      if (!res.ok || !res.body) throw new Error(`Request failed: ${res.status}`)
 
-      setMessages((prev) => [
-        ...prev,
-        { role: 'assistant', content: data.reply, cards: data.cards ?? [] },
-      ])
+      const reader = res.body.getReader()
+      const decoder = new TextDecoder()
+      let buffer = ''
+      let started = false
+
+      while (true) {
+        const { done, value } = await reader.read()
+        if (done) break
+        buffer += decoder.decode(value, { stream: true })
+        const parts = buffer.split('\n\n')
+        buffer = parts.pop()
+
+        for (const part of parts) {
+          const trimmed = part.trim()
+          if (!trimmed.startsWith('data:')) continue
+          const payload = trimmed.slice(5).trim()
+          if (!payload) continue
+          const event = JSON.parse(payload)
+
+          if (event.error) throw new Error(event.error)
+
+          if (!started) {
+            started = true
+            setMessages((prev) => [...prev, { role: 'assistant', content: '', cards: [] }])
+          }
+
+          if (event.delta) {
+            setMessages((prev) => {
+              const updated = [...prev]
+              const last = updated.length - 1
+              updated[last] = { ...updated[last], content: updated[last].content + event.delta }
+              return updated
+            })
+          }
+
+          if (event.done) {
+            setMessages((prev) => {
+              const updated = [...prev]
+              const last = updated.length - 1
+              updated[last] = {
+                ...updated[last],
+                content: event.reply ?? updated[last].content,
+                cards: event.cards ?? [],
+              }
+              return updated
+            })
+          }
+        }
+      }
     } catch (err) {
+      if (err.name === 'AbortError') return
       console.error(err)
       setMessages((prev) => [...prev, { role: 'assistant', content: t('chat_error') }])
     } finally {
+      abortControllerRef.current = null
       setIsLoading(false)
     }
+  }
+
+  function stopGeneration() {
+    abortControllerRef.current?.abort()
   }
 
   const examples = t('chat_examples')
@@ -101,12 +156,14 @@ export default function Chat() {
             <ChatBubble key={i} role={m.role} content={m.content} cards={m.cards} />
           ))}
 
-          {isLoading && <ChatBubble role="assistant" content={t('chat_thinking')} />}
+          {isLoading && messages[messages.length - 1]?.role !== 'assistant' && (
+            <ChatBubble role="assistant" content={t('chat_thinking')} />
+          )}
           <div ref={scrollRef} />
         </div>
 
         <div className="z-10 w-full shrink-0 border-t border-outline-variant/40 bg-surface/90 p-3 backdrop-blur-md sm:p-4">
-          <ChatInput onSend={sendMessage} disabled={isLoading} />
+          <ChatInput onSend={sendMessage} onStop={stopGeneration} loading={isLoading} />
           <p className="mt-2 text-center text-[11px] text-outline">{t('chat_disclaimer')}</p>
         </div>
       </section>
