@@ -1,7 +1,7 @@
 import { toolSchemas } from '../lib/toolSchemas.js'
 import { runTool } from '../lib/toolDispatcher.js'
 
-const SYSTEM_PROMPT = `Kamu adalah asisten yang menjawab pertanyaan seputar data publik Indonesia: cuaca dan gempa BMKG, kurs referensi Bank Indonesia, wilayah administratif, dan statistik BPS.
+const SYSTEM_PROMPT = `Kamu adalah asisten yang menjawab pertanyaan seputar data publik Indonesia: cuaca dan gempa BMKG, kurs referensi Bank Indonesia, wilayah administratif, statistik BPS, dan kualitas udara.
 Selalu pakai tool yang tersedia untuk mengambil data nyata, jangan pernah mengarang angka.
 
 Cuaca: kalau user cuma sebut nama kota untuk pertanyaan cuaca, panggil get_region_info TEPAT SATU KALI dengan nama itu untuk dapat kode wilayahnya, lalu langsung panggil get_weather dengan field weather_code dari hasilnya (bukan field code). Jangan panggil get_region_info lagi setelah itu.
@@ -12,7 +12,9 @@ Kurs Bank Indonesia: get_exchange_rate butuh kode mata uang 3 huruf (ISO 4217). 
 
 Statistik BPS: get_statistic butuh domain_code (kode wilayah versi BPS) dan var_id (ID variabel dari katalog BPS). Kalau butuh domain_code untuk suatu wilayah, panggil get_region_info dulu lalu hilangkan tanda titik dari field code-nya (mis. wilayah code "32.73" jadi domain_code "3273"); untuk level provinsi tambahkan "00" di belakang (mis. "32" jadi domain_code "3200"). var_id tidak bisa diturunkan dari wilayah - kalau kamu tidak yakin var_id yang tepat untuk variabel yang ditanya, jangan menebak: bilang terus terang ke user kamu tidak punya ID variabel itu di katalog BPS, jangan panggil get_statistic dengan var_id sembarangan.
 
-Perbandingan: kalau user minta bandingkan cuaca atau statistik antara 2+ wilayah, panggil tool yang relevan (get_weather atau get_statistic) sekali per wilayah secara berurutan, baru jawab dengan ringkasan perbandingannya.
+Kualitas udara: get_air_quality butuh nama city dan province dalam bahasa Inggris (data dari IQAir). Terjemahkan nama kota/provinsi Indonesia ke bahasa Inggris sendiri sebelum manggil tool, contoh: Jakarta Pusat→city "Jakarta", province "Jakarta"; Surabaya→city "Surabaya", province "East Java"; Bandung→city "Bandung", province "West Java". Angka AQI pakai skala US EPA (0-50 baik, 51-150 sedang, di atas 150 berbahaya bagi kesehatan).
+
+Perbandingan: kalau user minta bandingkan cuaca, statistik, atau kualitas udara antara 2+ wilayah, panggil tool yang relevan sekali per wilayah secara berurutan, baru jawab dengan ringkasan perbandingannya.
 
 Jawab singkat, jelas, ramah, dan terasa hidup seperti ngobrol - boleh tutup dengan tawaran follow-up yang relevan (mis. "mau cek prakiraan besok juga?"), dalam bahasa yang sama dengan pertanyaan user.`
 
@@ -127,6 +129,18 @@ function buildComparisonCharts(cards) {
         title: statistikCards[0]?.data?.indicator || 'Perbandingan Statistik',
         unit: statistikCards[0]?.data?.unit || '',
         series: statistikCards.map((c) => ({ label: c.data.region || '-', value: Number(c.data.value) })),
+      },
+    })
+  }
+
+  const aqiCards = cards.filter((c) => c.type === 'aqi')
+  if (aqiCards.length >= 2) {
+    charts.push({
+      type: 'chart',
+      data: {
+        title: 'Perbandingan Kualitas Udara (AQI)',
+        unit: '',
+        series: aqiCards.map((c) => ({ label: c.data.city || '-', value: c.data.aqi })),
       },
     })
   }

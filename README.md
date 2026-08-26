@@ -43,6 +43,7 @@ npm run dev
 | `GROQ_API_KEY`  | Ya    | Dipakai `api/chat.js` untuk memanggil GPT-OSS lewat Groq |
 | `GROQ_MODEL`         | Tidak | Default `openai/gpt-oss-120b` kalau tidak diisi                   |
 | `BPS_API_KEY`        | Untuk tool statistik | Daftar gratis di https://webapi.bps.go.id/developer/ |
+| `IQAIR_API_KEY`      | Untuk tool kualitas udara | Daftar gratis (tier Community) di https://dashboard.iqair.com/ |
 
 BMKG dan endpoint kurs JISDOR Bank Indonesia tidak butuh API key. Data
 wilayah administratif (`lib/tools/wilayah.js`) dibundel lokal sebagai CSV
