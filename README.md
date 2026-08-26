@@ -9,15 +9,20 @@ tool-calling ke GPT-OSS (via Groq), tanpa database.
 
 ```
 src/            frontend React (Beranda, Chat, Dokumentasi)
-api/chat.js     satu-satunya endpoint serverless - jalankan tool-use loop
+api/chat.js     endpoint serverless - jalankan tool-use loop
+mcp-server/     server MCP (stdio) - expose lib/tools/* yang sama ke Claude Desktop/Code
 lib/tools/      implementasi tiap sumber data (fetch murni, stateless)
 lib/toolSchemas.js   definisi tool (dipakai ulang untuk pemanggilan model & MCP)
 lib/toolDispatcher.js   pemetaan nama tool -> fungsi + jenis kartu UI
 ```
 
 `lib/tools/*` sengaja dipisah dari `api/chat.js` supaya bisa dipakai ulang
-sebagai MCP server terpisah nanti (lihat halaman Dokumentasi > Konfigurasi
-MCP di aplikasi).
+sebagai MCP server terpisah (`mcp-server/index.js`) - lihat halaman
+Dokumentasi > Konfigurasi MCP di aplikasi untuk config client-nya.
+
+```bash
+npm run mcp   # jalankan MCP server lewat stdio
+```
 
 ## Menjalankan secara lokal
 
@@ -85,6 +90,6 @@ riwayat permanen, itu titik yang tepat untuk baru menambahkan database.
 
 ## Roadmap yang masuk akal
 
-- Bungkus `lib/tools` sebagai MCP server terpisah, publish sebagai package.
+- ~~Bungkus `lib/tools` sebagai MCP server terpisah~~ - selesai, lihat `mcp-server/index.js`. Belum dipublish sebagai package npm terpisah.
 - Terjemahkan isi `src/data/docsContent.js` ke bahasa Inggris (saat ini bilingual baru di UI chrome, isi dokumentasi masih bahasa Indonesia).
 - Tambah streaming response di `/api/chat.js` supaya jawaban muncul kata demi kata.

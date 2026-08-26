@@ -23,7 +23,7 @@ export const docsSections = [
 cd nusantara-data-assistant
 npm install
 cp .env.example .env
-# isi DASHSCOPE_API_KEY dan BPS_API_KEY di .env
+# isi GROQ_API_KEY dan BPS_API_KEY di .env
 npm run dev`,
   },
   {
