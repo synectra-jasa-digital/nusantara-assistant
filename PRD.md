@@ -142,6 +142,6 @@ Membungkus dan mempublikasikan repositori `mcp-server/index.js` ke registri NPM 
 - [x] **Konsep & Arsitektur Utama**: Disetujui oleh User
 - [x] **Pengecualian Riwayat Chat**: Dikonfirmasi
 - [x] **Pelaksanaan Fase 1 (Streaming & Visualisasi)**: Selesai - `api/chat.js` (SSE streaming + self-check pass + tombol Stop Generation), `src/components/cards/ChartCard.jsx` (Recharts, lazy-loaded)
-- [ ] **Fase 2 (PIHPS & AQI)**: Belum dikerjakan
+- [x] **Fase 2 (AQI)**: Selesai - `lib/tools/aqi.js` (IQAir API), `AqiCard.jsx`. PIHPS di-skip (tidak ada API resmi pihak ketiga dari BI, dikonfirmasi user)
 - [ ] **Fase 3 (Voice I/O)**: Belum dikerjakan
 - [ ] **Fase 4 (API Playground & publish NPM)**: Belum dikerjakan
