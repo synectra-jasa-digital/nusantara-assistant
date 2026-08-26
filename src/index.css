@@ -46,5 +46,23 @@ body {
 }
 
 .animate-fade-in-up {
-  animation: fade-in-up 0.25s ease-out;
+  animation: fade-in-up 0.25s ease-out both;
+}
+
+/* three-dot "assistant is typing" indicator */
+@keyframes bounce-dot {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  30% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+.animate-bounce-dot {
+  animation: bounce-dot 1s ease-in-out infinite;
 }
