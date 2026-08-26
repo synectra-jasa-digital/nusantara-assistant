@@ -3,7 +3,7 @@
 Asisten chat AI untuk empat sumber data publik Indonesia: cuaca dan gempa
 BMKG, kurs referensi Bank Indonesia, wilayah administratif, dan statistik
 BPS. React (Vite) di frontend, serverless function di Vercel untuk
-tool-calling ke Gemini (via Google AI Studio), tanpa database.
+tool-calling ke DeepSeek, tanpa database.
 
 ## Arsitektur singkat
 
@@ -24,7 +24,7 @@ MCP di aplikasi).
 ```bash
 npm install
 cp .env.example .env
-# isi GEMINI_API_KEY dan BPS_API_KEY
+# isi DEEPSEEK_API_KEY dan BPS_API_KEY
 
 npx vercel dev   # jalankan api/ + frontend sekaligus di port 3000
 # atau, kalau cuma mau kerja di UI tanpa backend:
@@ -35,8 +35,8 @@ npm run dev
 
 | Variabel            | Wajib | Keterangan                                                        |
 | -------------------- | ----- | ------------------------------------------------------------------ |
-| `GEMINI_API_KEY`  | Ya    | Dipakai `api/chat.js` untuk memanggil Gemini lewat Google AI Studio |
-| `GEMINI_MODEL`         | Tidak | Default `gemini-3.6-flash` kalau tidak diisi                   |
+| `DEEPSEEK_API_KEY`  | Ya    | Dipakai `api/chat.js` untuk memanggil DeepSeek |
+| `DEEPSEEK_MODEL`         | Tidak | Default `deepseek-chat` kalau tidak diisi                   |
 | `BPS_API_KEY`        | Untuk tool statistik | Daftar gratis di https://webapi.bps.go.id/developer/ |
 
 BMKG, wilayah.id, dan endpoint kurs JISDOR Bank Indonesia tidak butuh API

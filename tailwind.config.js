@@ -83,6 +83,11 @@ export default {
         'headline-xl': ['40px', { lineHeight: '48px', letterSpacing: '-0.02em', fontWeight: '700' }],
         'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.02em', fontWeight: '700' }],
       },
+      boxShadow: {
+        'glass': '0 8px 32px 0 rgba(0, 101, 141, 0.08)',
+        'glow': '0 0 25px -5px rgba(0, 186, 255, 0.3)',
+        'card-hover': '0 12px 30px -10px rgba(0, 101, 141, 0.12)',
+      },
     },
   },
   plugins: [],
