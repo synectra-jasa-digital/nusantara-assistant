@@ -3,7 +3,7 @@
 Asisten chat AI untuk empat sumber data publik Indonesia: cuaca dan gempa
 BMKG, kurs referensi Bank Indonesia, wilayah administratif, dan statistik
 BPS. React (Vite) di frontend, serverless function di Vercel untuk
-tool-calling ke DeepSeek, tanpa database.
+tool-calling ke GPT-OSS (via Groq), tanpa database.
 
 ## Arsitektur singkat
 
@@ -24,7 +24,7 @@ MCP di aplikasi).
 ```bash
 npm install
 cp .env.example .env
-# isi DEEPSEEK_API_KEY dan BPS_API_KEY
+# isi GROQ_API_KEY dan BPS_API_KEY
 
 npx vercel dev   # jalankan api/ + frontend sekaligus di port 3000
 # atau, kalau cuma mau kerja di UI tanpa backend:
@@ -35,8 +35,8 @@ npm run dev
 
 | Variabel            | Wajib | Keterangan                                                        |
 | -------------------- | ----- | ------------------------------------------------------------------ |
-| `DEEPSEEK_API_KEY`  | Ya    | Dipakai `api/chat.js` untuk memanggil DeepSeek |
-| `DEEPSEEK_MODEL`         | Tidak | Default `deepseek-chat` kalau tidak diisi                   |
+| `GROQ_API_KEY`  | Ya    | Dipakai `api/chat.js` untuk memanggil GPT-OSS lewat Groq |
+| `GROQ_MODEL`         | Tidak | Default `openai/gpt-oss-120b` kalau tidak diisi                   |
 | `BPS_API_KEY`        | Untuk tool statistik | Daftar gratis di https://webapi.bps.go.id/developer/ |
 
 BMKG, wilayah.id, dan endpoint kurs JISDOR Bank Indonesia tidak butuh API
@@ -46,7 +46,7 @@ key.
 
 1. Push repo ini ke GitHub.
 2. Import project di Vercel, framework preset otomatis terdeteksi sebagai Vite.
-3. Set `GEMINI_API_KEY` dan `BPS_API_KEY` di Project Settings → Environment Variables.
+3. Set `GROQ_API_KEY` dan `BPS_API_KEY` di Project Settings → Environment Variables.
 4. Deploy. Folder `/api` otomatis jadi serverless function, tidak perlu konfigurasi tambahan.
 
 ## Catatan penting sebelum demo ke orang lain
