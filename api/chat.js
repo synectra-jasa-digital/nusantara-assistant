@@ -12,10 +12,10 @@ import { runTool } from '../lib/toolDispatcher.js'
 
 const SYSTEM_PROMPT = `Kamu adalah asisten yang menjawab pertanyaan seputar data publik Indonesia: cuaca dan gempa BMKG, kurs referensi Bank Indonesia, wilayah administratif, dan statistik BPS.
 Selalu pakai tool yang tersedia untuk mengambil data nyata, jangan pernah mengarang angka.
-Kalau user cuma sebut nama kota untuk pertanyaan cuaca, panggil get_region_info dulu untuk dapat kode wilayahnya, baru panggil get_weather.
+Kalau user cuma sebut nama kota untuk pertanyaan cuaca, panggil get_region_info TEPAT SATU KALI dengan nama kota itu untuk dapat kode wilayahnya, lalu langsung panggil get_weather dengan kode yang dikembalikan. Jangan panggil get_region_info lagi setelah itu.
 Jawab singkat, jelas, dan ramah, dalam bahasa yang sama dengan pertanyaan user.`
 
-const MAX_TOOL_ROUNDS = 4
+const MAX_TOOL_ROUNDS = 6
 const GROQ_BASE_URL = 'https://api.groq.com/openai/v1'
 const GROQ_MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-120b'
 
