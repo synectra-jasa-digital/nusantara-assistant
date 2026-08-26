@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dokumentasi - Data Nusantara Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#6d3000",
+                        "secondary-container": "#feb700",
+                        "primary-fixed": "#c6e7ff",
+                        "on-secondary-fixed": "#271900",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eeeef0",
+                        "surface": "#f9f9fc",
+                        "on-secondary-container": "#6b4b00",
+                        "secondary": "#7c5800",
+                        "tertiary-container": "#ff9249",
+                        "on-background": "#1a1c1e",
+                        "primary-container": "#00baff",
+                        "inverse-primary": "#81cfff",
+                        "primary": "#00658d",
+                        "surface-container-low": "#f3f3f6",
+                        "tertiary-fixed": "#ffdbc8",
+                        "on-tertiary-fixed-variant": "#753400",
+                        "on-primary-container": "#004764",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#3d4850",
+                        "outline-variant": "#bdc8d2",
+                        "outline": "#6d7881",
+                        "on-tertiary-fixed": "#321200",
+                        "secondary-fixed-dim": "#ffba20",
+                        "primary-fixed-dim": "#81cfff",
+                        "surface-container-high": "#e8e8ea",
+                        "surface-container-highest": "#e2e2e5",
+                        "inverse-on-surface": "#f0f0f3",
+                        "surface-dim": "#dadadc",
+                        "on-surface": "#1a1c1e",
+                        "tertiary-fixed-dim": "#ffb68b",
+                        "on-primary-fixed": "#001e2d",
+                        "on-secondary-fixed-variant": "#5e4200",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdea8",
+                        "tertiary": "#994700",
+                        "inverse-surface": "#2f3133",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f9fc",
+                        "on-primary-fixed-variant": "#004c6b",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f9f9fc",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#00658d",
+                        "surface-variant": "#e2e2e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "sm": "12px",
+                        "md": "24px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm dark:shadow-none transition-all duration-200 docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-base md:px-md max-w-container-max mx-auto h-16">
+<div class="flex items-center gap-md">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-container flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-secondary-container" data-icon="hub">hub</span>
+                    Data Nusantara Assistant
+                </a>
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-all duration-200" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-all duration-200" href="#">Chat</a>
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 font-bold transition-all duration-200" href="#">Docs</a>
+</nav>
+<div class="flex items-center gap-sm">
+<!-- Search (Hidden per JSON but requested in prompt, adding standard search pattern) -->
+<div class="hidden md:flex items-center bg-surface-container rounded-full px-sm py-xs border border-outline-variant focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-32 focus:w-48 transition-all px-2 placeholder-on-surface-variant/50" placeholder="Search docs..." type="text"/>
+</div>
+<button class="bg-surface-container-high rounded-full px-sm py-xs text-label-md font-label-md flex items-center gap-1 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[16px]" data-icon="language">language</span>
+                    ID/EN
+                </button>
+</div>
+</div>
+</header>
+<!-- Main Container -->
+<div class="flex-grow flex w-full max-w-container-max mx-auto relative">
+<!-- SideNavBar -->
+<aside class="h-full w-64 hidden md:flex flex-col border-r border-outline-variant dark:border-outline bg-surface dark:bg-surface-container-low flat no shadows sticky top-16 h-[calc(100vh-64px)] p-sm overflow-y-auto z-40 shrink-0">
+<div class="mb-lg px-sm">
+<h2 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-container">Documentation</h2>
+<p class="text-label-md font-label-md text-on-surface-variant mt-xs">API &amp; Integration Guide</p>
+</div>
+<nav class="flex flex-col gap-xs font-label-md text-label-md">
+<a class="flex items-center gap-sm p-sm rounded-lg bg-primary-container/20 text-on-primary-container dark:bg-primary-fixed-dim dark:text-on-primary-fixed font-bold transition-transform duration-150 active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+                    Intro
+                </a>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="cloudy_snowing">cloudy_snowing</span>
+                    Weather Tools
+                </a>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+                    BI Tools
+                </a>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+                    Region Tools
+                </a>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+                    BPS Tools
+                </a>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+                    Deploy
+                </a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-grow p-md md:p-lg lg:p-xl max-w-4xl mx-auto w-full">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant mb-md">
+<span>Docs</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Intro</span>
+</div>
+<!-- Page Title -->
+<h1 class="font-headline-xl text-headline-xl text-on-background mb-md">Pengenalan dan Instalasi</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl">
+                Data Nusantara Assistant menyediakan API komprehensif untuk mengakses data cuaca, finansial, demografi, dan wilayah di Indonesia. Panduan ini akan membantu Anda mengintegrasikan layanan kami.
+            </p>
+<!-- Section 1: Quick Start -->
+<section class="mb-xl">
+<h2 class="font-headline-md text-headline-md text-primary mb-sm flex items-center gap-2 border-b border-surface-variant pb-xs">
+<span class="material-symbols-outlined">bolt</span>
+                    Mulai Cepat
+                </h2>
+<p class="mb-sm text-on-surface">Instal SDK resmi kami menggunakan npm atau yarn. SDK ini menangani autentikasi dan menyediakan tipe yang kuat (strongly-typed) untuk TypeScript.</p>
+<div class="bg-[#1a1b26] rounded-lg border border-outline/20 overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.04)] mb-md">
+<div class="flex items-center justify-between px-sm py-xs bg-[#24283b] border-b border-outline/20">
+<span class="text-label-sm font-label-sm text-outline-variant font-mono">Terminal</span>
+<button class="text-outline-variant hover:text-white transition-colors" title="Copy to clipboard">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<pre class="p-sm text-sm text-[#a9b1d6] font-mono overflow-x-auto"><code>npm install @datanusantara/sdk<br/># or<br/>yarn add @datanusantara/sdk</code></pre>
+</div>
+</section>
+<!-- Section 2: Endpoints overview -->
+<section class="mb-xl">
+<div class="flex items-center justify-between mb-sm border-b border-surface-variant pb-xs">
+<h2 class="font-headline-md text-headline-md text-primary">Tinjauan API Endpoint</h2>
+</div>
+<p class="mb-md text-on-surface">Beberapa endpoint bersifat publik, sementara yang lain (seperti data BPS detail) memerlukan API Key yang valid.</p>
+<!-- Bento-style Grid for Endpoint Types -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md mb-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-md border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-shadow">
+<div class="flex items-start justify-between mb-sm">
+<div class="flex items-center gap-2 text-primary font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-secondary-container">cloudy_snowing</span>
+<h3>Cuaca BMKG</h3>
+</div>
+<span class="bg-primary/10 text-primary px-2 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Public</span>
+</div>
+<p class="text-label-md font-label-md text-on-surface-variant mb-4">Akses data prakiraan cuaca dan gempa bumi real-time dari BMKG tanpa autentikasi.</p>
+<a class="text-primary text-label-md font-label-md hover:underline flex items-center gap-1" href="#">Lihat Dokumentasi <span class="material-symbols-outlined text-[14px]">arrow_forward</span></a>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-md border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-shadow">
+<div class="flex items-start justify-between mb-sm">
+<div class="flex items-center gap-2 text-primary font-headline-md text-headline-md">
+<span class="material-symbols-outlined text-secondary-container">query_stats</span>
+<h3>Statistik BPS</h3>
+</div>
+<span class="bg-tertiary-container text-on-tertiary-container px-2 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">key</span> Key Req
+                            </span>
+</div>
+<p class="text-label-md font-label-md text-on-surface-variant mb-4">Data demografi, ekonomi, dan sosial komprehensif. Memerlukan token BPS resmi.</p>
+<a class="text-primary text-label-md font-label-md hover:underline flex items-center gap-1" href="#">Lihat Dokumentasi <span class="material-symbols-outlined text-[14px]">arrow_forward</span></a>
+</div>
+</div>
+</section>
+<!-- Section 3: Parameters Table -->
+<section class="mb-xl">
+<h2 class="font-headline-md text-headline-md text-primary mb-sm border-b border-surface-variant pb-xs">Parameter Global</h2>
+<div class="overflow-x-auto rounded-lg border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface font-label-md text-label-md">
+<th class="p-sm border-b border-outline-variant font-bold">Parameter</th>
+<th class="p-sm border-b border-outline-variant font-bold">Tipe</th>
+<th class="p-sm border-b border-outline-variant font-bold">Wajib</th>
+<th class="p-sm border-b border-outline-variant font-bold">Deskripsi</th>
+</tr>
+</thead>
+<tbody class="text-body-md bg-surface-container-lowest">
+<tr class="border-b border-surface-variant hover:bg-surface-container-lowest/50">
+<td class="p-sm font-mono text-sm text-primary">region_id</td>
+<td class="p-sm text-outline">string</td>
+<td class="p-sm"><span class="bg-surface-container px-2 py-1 rounded text-xs">Tidak</span></td>
+<td class="p-sm text-on-surface-variant">Kode wilayah (BPS/Kemendagri) untuk memfilter data spasial.</td>
+</tr>
+<tr class="border-b border-surface-variant hover:bg-surface-container-lowest/50">
+<td class="p-sm font-mono text-sm text-primary">limit</td>
+<td class="p-sm text-outline">integer</td>
+<td class="p-sm"><span class="bg-surface-container px-2 py-1 rounded text-xs">Tidak</span></td>
+<td class="p-sm text-on-surface-variant">Maksimal hasil yang dikembalikan. Default: 20, Max: 100.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<!-- Right Sidebar (Table of Contents - Desktop Only) -->
+<aside class="hidden lg:block w-48 shrink-0 p-md sticky top-16 h-[calc(100vh-64px)] overflow-y-auto border-l border-outline-variant/30">
+<h4 class="font-label-md text-label-md text-on-surface font-bold mb-sm uppercase tracking-wider text-xs">On this page</h4>
+<nav class="flex flex-col gap-2 font-label-sm text-label-sm">
+<a class="text-primary font-bold" href="#">Mulai Cepat</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Tinjauan API Endpoint</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors pl-2 border-l-2 border-surface-variant" href="#">Cuaca BMKG</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors pl-2 border-l-2 border-surface-variant" href="#">Statistik BPS</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Parameter Global</a>
+</nav>
+</aside>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-highest w-full py-md border-t border-outline-variant dark:border-outline mt-auto flat no shadows transition-opacity duration-200">
+<div class="max-w-container-max mx-auto px-base md:px-md flex flex-col md:flex-row justify-between items-center gap-sm">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-container">
+<span class="text-label-sm font-normal">© 2024 Data Nusantara Assistant</span>
+</div>
+<nav class="flex flex-wrap justify-center gap-md font-label-sm text-label-sm">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline" href="#">GitHub</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline" href="#">Documentation</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline" href="#">Terms</a>
+</nav>
+</div>
+</footer>
+</body></html>

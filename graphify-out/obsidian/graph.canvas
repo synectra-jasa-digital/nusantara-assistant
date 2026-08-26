@@ -1,0 +1,3494 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Docs, Mockups & Design System",
+      "x": 0,
+      "y": 0,
+      "width": 1320,
+      "height": 720,
+      "color": "1"
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_code_admin_breadcrumb_card",
+      "type": "file",
+      "file": "Admin Region Breadcrumb Card (Kemendagri) UI pattern.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_bmkg",
+      "type": "file",
+      "file": "BMKG (cuaca & gempa data source).md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_code_bps_stat_card",
+      "type": "file",
+      "file": "BPS Large Stat Card UI pattern.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_mobile_code_bps_card",
+      "type": "file",
+      "file": "BPS Population Stat Card UI pattern - mobile.md",
+      "x": 620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_bank_indonesia_kurs",
+      "type": "file",
+      "file": "Bank Indonesia kurs referensi (JISDOR).md",
+      "x": 820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_code_page",
+      "type": "file",
+      "file": "Beranda (Home) page mockup - desktop.md",
+      "x": 1020,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_mobile_code_page",
+      "type": "file",
+      "file": "Beranda (Home) page mockup - mobile.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_code_page",
+      "type": "file",
+      "file": "Chat page mockup - desktop.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_mobile_code_page",
+      "type": "file",
+      "file": "Chat page mockup - mobile.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_nusantara_bright_design_color_palette",
+      "type": "file",
+      "file": "Color palette rationale Sky BlueSun GoldDeep Orange, Indonesian sky & sun inspired, AAA-contrast neutral text.md",
+      "x": 620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_nusantara_bright_design_component_specs",
+      "type": "file",
+      "file": "Component specs chat bubbles, language toggle, data cards, buttons, input fields, alert chips.md",
+      "x": 820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_code_weather_endpoint_card",
+      "type": "file",
+      "file": "Cuaca BMKG endpoint card (Public, no auth).md",
+      "x": 1020,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_mobile_code_weather_endpoint_card",
+      "type": "file",
+      "file": "Cuaca BMKG endpoint card (Public, no auth) - mobile.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_code_currency_card",
+      "type": "file",
+      "file": "Currency Data Card (BI JISDOR) UI pattern.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_data_nusantara_assistant",
+      "type": "file",
+      "file": "Data Nusantara Assistant (project).md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_code_page",
+      "type": "file",
+      "file": "Dokumentasi (Docs) page mockup - desktop.md",
+      "x": 620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_mobile_code_page",
+      "type": "file",
+      "file": "Dokumentasi (Docs) page mockup - mobile.md",
+      "x": 820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_nusantara_bright_design_elevation_shadows",
+      "type": "file",
+      "file": "Elevation rationale Tonal Layering & Soft Ambient Shadows for a simple-yet-professional feel.md",
+      "x": 1020,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_nusantara_bright_design_grid_system",
+      "type": "file",
+      "file": "Layout rationale Fluid-Fixed Hybrid Grid (1284 columns, 8px spacing rhythm).md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_nusantara_bright_design_system",
+      "type": "file",
+      "file": "Nusantara Bright design system.md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_government_api_ip_blocking",
+      "type": "file",
+      "file": "Rationalerisk Indonesian gov APIs block cloud-datacenter IPs (Vercel).md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_bikurs_field_aliases",
+      "type": "file",
+      "file": "Rationale biKurs.js FIELD_ALIASES unverified SOAPdiffgram field-name guessing.md",
+      "x": 620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_no_database_design",
+      "type": "file",
+      "file": "Rationale deliberately no database, chat history lives in React state.md",
+      "x": 820,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_roadmap_docs_translation",
+      "type": "file",
+      "file": "Roadmap translate srcdatadocsContent.js to English.md",
+      "x": 1020,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_nusantara_bright_design_shape_language",
+      "type": "file",
+      "file": "Shape rationale Rounded and Friendly (8px16px radii) to offset dry statistical data.md",
+      "x": 20,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_bps_statistik",
+      "type": "file",
+      "file": "Statistik BPS.md",
+      "x": 220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_code_bps_endpoint_card",
+      "type": "file",
+      "file": "Statistik BPS endpoint card (Key Required).md",
+      "x": 420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_mobile_code_bps_endpoint_card",
+      "type": "file",
+      "file": "Statistik BPS endpoint card (Key Required) - mobile.md",
+      "x": 620,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_nusantara_bright_design_typography",
+      "type": "file",
+      "file": "Typography rationale Plus Jakarta Sans, Indonesian-rooted geometric sans for brand alignment.md",
+      "x": 820,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_vercel_deploy",
+      "type": "file",
+      "file": "Vercel deployment (serverless api function).md",
+      "x": 1020,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_code_weather_card",
+      "type": "file",
+      "file": "Weather Data Card (BMKG) UI pattern.md",
+      "x": 20,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_mobile_code_weather_card",
+      "type": "file",
+      "file": "Weather Data Card (BMKG) UI pattern - mobile.md",
+      "x": 220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_wilayah_administratif",
+      "type": "file",
+      "file": "Wilayah Administratif (wilayah.id  Kemendagri region data).md",
+      "x": 420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_index_app_shell",
+      "type": "file",
+      "file": "index.html app shell (Vite entry  root mount).md",
+      "x": 620,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "React Chat UI Components",
+      "x": 1400,
+      "y": 0,
+      "width": 1320,
+      "height": 720,
+      "color": "2"
+    },
+    {
+      "id": "n_src_components_chatbubble_card_components",
+      "type": "file",
+      "file": "CARD_COMPONENTS.md",
+      "x": 1420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_pages_chat_chat",
+      "type": "file",
+      "file": "Chat().md",
+      "x": 1620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_pages_chat",
+      "type": "file",
+      "file": "Chat.jsx.md",
+      "x": 1820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_chatbubble_chatbubble",
+      "type": "file",
+      "file": "ChatBubble().md",
+      "x": 2020,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_chatbubble",
+      "type": "file",
+      "file": "ChatBubble.jsx.md",
+      "x": 2220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_chatinput_chatinput",
+      "type": "file",
+      "file": "ChatInput().md",
+      "x": 2420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_chatinput",
+      "type": "file",
+      "file": "ChatInput.jsx.md",
+      "x": 1420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_docs_codeblock_codeblock",
+      "type": "file",
+      "file": "CodeBlock().md",
+      "x": 1620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_docs_codeblock",
+      "type": "file",
+      "file": "CodeBlock.jsx.md",
+      "x": 1820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_cards_earthquakecard_earthquakecard",
+      "type": "file",
+      "file": "EarthquakeCard().md",
+      "x": 2020,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_cards_earthquakecard",
+      "type": "file",
+      "file": "EarthquakeCard.jsx.md",
+      "x": 2220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_layout_header_header",
+      "type": "file",
+      "file": "Header().md",
+      "x": 2420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_layout_header",
+      "type": "file",
+      "file": "Header.jsx.md",
+      "x": 1420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_icon_icon",
+      "type": "file",
+      "file": "Icon().md",
+      "x": 1620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_icon",
+      "type": "file",
+      "file": "Icon.jsx.md",
+      "x": 1820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_cards_kurscard_kurscard",
+      "type": "file",
+      "file": "KursCard().md",
+      "x": 2020,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_cards_kurscard",
+      "type": "file",
+      "file": "KursCard.jsx.md",
+      "x": 2220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_i18n_languagecontext_languagecontext",
+      "type": "file",
+      "file": "LanguageContext.md",
+      "x": 2420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_i18n_languagecontext",
+      "type": "file",
+      "file": "LanguageContext.jsx.md",
+      "x": 1420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_i18n_languagecontext_languageprovider",
+      "type": "file",
+      "file": "LanguageProvider().md",
+      "x": 1620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_layout_header_navitem",
+      "type": "file",
+      "file": "NavItem().md",
+      "x": 1820,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_pages_chat_suggestion_icons",
+      "type": "file",
+      "file": "SUGGESTION_ICONS.md",
+      "x": 2020,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_cards_statistikcard_statistikcard",
+      "type": "file",
+      "file": "StatistikCard().md",
+      "x": 2220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_cards_statistikcard",
+      "type": "file",
+      "file": "StatistikCard.jsx.md",
+      "x": 2420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_suggestionchip_suggestionchip",
+      "type": "file",
+      "file": "SuggestionChip().md",
+      "x": 1420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_suggestionchip",
+      "type": "file",
+      "file": "SuggestionChip.jsx.md",
+      "x": 1620,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_cards_weathercard_weathercard",
+      "type": "file",
+      "file": "WeatherCard().md",
+      "x": 1820,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_cards_weathercard",
+      "type": "file",
+      "file": "WeatherCard.jsx.md",
+      "x": 2020,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_cards_wilayahcard_wilayahcard",
+      "type": "file",
+      "file": "WilayahCard().md",
+      "x": 2220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_cards_wilayahcard",
+      "type": "file",
+      "file": "WilayahCard.jsx.md",
+      "x": 2420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_i18n_languagecontext_getinitiallang",
+      "type": "file",
+      "file": "getInitialLang().md",
+      "x": 1420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_i18n_translations_translations",
+      "type": "file",
+      "file": "translations.md",
+      "x": 1620,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_i18n_translations",
+      "type": "file",
+      "file": "translations.js.md",
+      "x": 1820,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_i18n_languagecontext_uselanguage",
+      "type": "file",
+      "file": "useLanguage().md",
+      "x": 2020,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Core Dependencies & Scripts",
+      "x": 2800,
+      "y": 0,
+      "width": 1100,
+      "height": 620,
+      "color": "3"
+    },
+    {
+      "id": "n_package_scripts_build",
+      "type": "file",
+      "file": "build.md",
+      "x": 2820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies",
+      "type": "file",
+      "file": "dependencies.md",
+      "x": 3020,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_dev",
+      "type": "file",
+      "file": "dev.md",
+      "x": 3220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_dev_api",
+      "type": "file",
+      "file": "devapi.md",
+      "x": 3420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_fast_xml_parser",
+      "type": "file",
+      "file": "fast-xml-parser_1.md",
+      "x": 3620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_fast_xml_parser",
+      "type": "file",
+      "file": "fast-xml-parser.md",
+      "x": 2820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_google_translate_api_x",
+      "type": "file",
+      "file": "google-translate-api-x_1.md",
+      "x": 3020,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_google_translate_api_x",
+      "type": "file",
+      "file": "google-translate-api-x.md",
+      "x": 3220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_name",
+      "type": "file",
+      "file": "name.md",
+      "x": 3420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package",
+      "type": "file",
+      "file": "package.json.md",
+      "x": 3620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_preview",
+      "type": "file",
+      "file": "preview.md",
+      "x": 2820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_private",
+      "type": "file",
+      "file": "private.md",
+      "x": 3020,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react",
+      "type": "file",
+      "file": "react.md",
+      "x": 3220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_react",
+      "type": "file",
+      "file": "react_1.md",
+      "x": 3420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react_dom",
+      "type": "file",
+      "file": "react-dom.md",
+      "x": 3620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_react_dom",
+      "type": "file",
+      "file": "react-dom_1.md",
+      "x": 2820,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react_router_dom",
+      "type": "file",
+      "file": "react-router-dom.md",
+      "x": 3020,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_react_router_dom",
+      "type": "file",
+      "file": "react-router-dom_1.md",
+      "x": 3220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts",
+      "type": "file",
+      "file": "scripts.md",
+      "x": 3420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_type",
+      "type": "file",
+      "file": "type.md",
+      "x": 3620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_version",
+      "type": "file",
+      "file": "version.md",
+      "x": 2820,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Pages & Documentation UI",
+      "x": 3980,
+      "y": 0,
+      "width": 1100,
+      "height": 620,
+      "color": "4"
+    },
+    {
+      "id": "n_src_app_app",
+      "type": "file",
+      "file": "App().md",
+      "x": 4000,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app",
+      "type": "file",
+      "file": "App.jsx.md",
+      "x": 4200,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_pages_beranda_beranda",
+      "type": "file",
+      "file": "Beranda().md",
+      "x": 4400,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_pages_beranda",
+      "type": "file",
+      "file": "Beranda.jsx.md",
+      "x": 4600,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_categorycard_categorycard",
+      "type": "file",
+      "file": "CategoryCard().md",
+      "x": 4800,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_categorycard",
+      "type": "file",
+      "file": "CategoryCard.jsx.md",
+      "x": 4000,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_docs_docssidebar_docssidebar",
+      "type": "file",
+      "file": "DocsSidebar().md",
+      "x": 4200,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_docs_docssidebar",
+      "type": "file",
+      "file": "DocsSidebar.jsx.md",
+      "x": 4400,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_pages_dokumentasi_dokumentasi",
+      "type": "file",
+      "file": "Dokumentasi().md",
+      "x": 4600,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_pages_dokumentasi",
+      "type": "file",
+      "file": "Dokumentasi.jsx.md",
+      "x": 4800,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_docs_paramtable_paramtable",
+      "type": "file",
+      "file": "ParamTable().md",
+      "x": 4000,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_docs_paramtable",
+      "type": "file",
+      "file": "ParamTable.jsx.md",
+      "x": 4200,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_docs_docssidebar_section_icons",
+      "type": "file",
+      "file": "SECTION_ICONS.md",
+      "x": 4400,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_categorycard_tones",
+      "type": "file",
+      "file": "TONES.md",
+      "x": 4600,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_data_docscontent",
+      "type": "file",
+      "file": "docsContent.js.md",
+      "x": 4800,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_data_docscontent_docssections",
+      "type": "file",
+      "file": "docsSections.md",
+      "x": 4000,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_i18n_useautotranslate_loadcache",
+      "type": "file",
+      "file": "loadCache().md",
+      "x": 4200,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_main",
+      "type": "file",
+      "file": "main.jsx.md",
+      "x": 4400,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_i18n_useautotranslate_savecache",
+      "type": "file",
+      "file": "saveCache().md",
+      "x": 4600,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_i18n_useautotranslate_useautotranslate",
+      "type": "file",
+      "file": "useAutoTranslate().md",
+      "x": 4800,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_i18n_useautotranslate",
+      "type": "file",
+      "file": "useAutoTranslate.js.md",
+      "x": 4000,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Chat API & Tool Dispatch",
+      "x": 5160,
+      "y": 0,
+      "width": 1100,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_lib_tooldispatcher_handlers",
+      "type": "file",
+      "file": "HANDLERS.md",
+      "x": 5180,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bmkgearthquake",
+      "type": "file",
+      "file": "bmkgEarthquake.js.md",
+      "x": 5380,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bmkgweather",
+      "type": "file",
+      "file": "bmkgWeather.js.md",
+      "x": 5580,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bpsstatistik",
+      "type": "file",
+      "file": "bpsStatistik.js.md",
+      "x": 5780,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_api_chat",
+      "type": "file",
+      "file": "chat.js.md",
+      "x": 5980,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bmkgearthquake_fetchjson",
+      "type": "file",
+      "file": "fetchJson().md",
+      "x": 5180,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_wilayah_fetchjson",
+      "type": "file",
+      "file": "fetchJson()_1.md",
+      "x": 5380,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_wilayah_findbyname",
+      "type": "file",
+      "file": "findByName().md",
+      "x": 5580,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bmkgearthquake_getearthquakelatest",
+      "type": "file",
+      "file": "getEarthquakeLatest().md",
+      "x": 5780,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bmkgearthquake_getearthquakelist",
+      "type": "file",
+      "file": "getEarthquakeList().md",
+      "x": 5980,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_wilayah_getregioninfo",
+      "type": "file",
+      "file": "getRegionInfo().md",
+      "x": 5180,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bpsstatistik_getstatistic",
+      "type": "file",
+      "file": "getStatistic().md",
+      "x": 5380,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bmkgweather_getweather",
+      "type": "file",
+      "file": "getWeather().md",
+      "x": 5580,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_api_chat_handler",
+      "type": "file",
+      "file": "handler()_1.md",
+      "x": 5780,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_api_chat_openaitools",
+      "type": "file",
+      "file": "openAiTools.md",
+      "x": 5980,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tooldispatcher_runtool",
+      "type": "file",
+      "file": "runTool().md",
+      "x": 5180,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tooldispatcher",
+      "type": "file",
+      "file": "toolDispatcher.js.md",
+      "x": 5380,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_toolschemas_toolschemas",
+      "type": "file",
+      "file": "toolSchemas.md",
+      "x": 5580,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_toolschemas",
+      "type": "file",
+      "file": "toolSchemas.js.md",
+      "x": 5780,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_wilayah",
+      "type": "file",
+      "file": "wilayah.js.md",
+      "x": 5980,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Beranda Mobile Concepts",
+      "x": 0,
+      "y": 800,
+      "width": 880,
+      "height": 520,
+      "color": "6"
+    },
+    {
+      "id": "n_concept_bmkg_data_source",
+      "type": "file",
+      "file": "BMKG (Indonesian Meteorology, Climatology, Geophysics Agency) Data Source.md",
+      "x": 20,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_bps_statistics_data_source",
+      "type": "file",
+      "file": "BPS (Statistics Indonesia) Macroeconomic Data Source.md",
+      "x": 220,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_bank_indonesia_data_source",
+      "type": "file",
+      "file": "Bank Indonesia Exchange Rate Data Source.md",
+      "x": 420,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_mobile_screen_homescreen",
+      "type": "file",
+      "file": "Beranda (Home) Mobile Screen Mockup.md",
+      "x": 620,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_chat_interface_feature",
+      "type": "file",
+      "file": "Chat Interface Feature (Nusantara Assistant).md",
+      "x": 20,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_mobile_screen_cuacagempacard",
+      "type": "file",
+      "file": "Feature Card Cuaca & Gempa (BMKG real-time data).md",
+      "x": 220,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_mobile_screen_kursbicard",
+      "type": "file",
+      "file": "Feature Card Kurs Bank Indonesia (exchange rate updates).md",
+      "x": 420,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_mobile_screen_statistikbpscard",
+      "type": "file",
+      "file": "Feature Card Statistik BPS (Indikator ekonomi makro).md",
+      "x": 620,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_mobile_screen_wilayahadministratifcard",
+      "type": "file",
+      "file": "Feature Card Wilayah Administratif (Provinsi hingga Desa).md",
+      "x": 20,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_mobile_screen_footerlinks",
+      "type": "file",
+      "file": "Footer Links GitHub, Documentation, Privacy Policy, Terms.md",
+      "x": 220,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_mobile_screen_herosection",
+      "type": "file",
+      "file": "Hero Section 'Navigasi Data Indonesia dengan Mudah'.md",
+      "x": 420,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_concept_indonesia_administrative_regions_data",
+      "type": "file",
+      "file": "Indonesia Administrative Regions Data (Province to Village).md",
+      "x": 620,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_mobile_screen_langtoggle",
+      "type": "file",
+      "file": "Language Toggle (IDEN).md",
+      "x": 20,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_mobile_screen_mulaichatbutton",
+      "type": "file",
+      "file": "Mulai Chat CTA Button.md",
+      "x": 220,
+      "y": 1120,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "Beranda Desktop Mockup",
+      "x": 1400,
+      "y": 800,
+      "width": 880,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_mulaichatbutton",
+      "type": "file",
+      "file": "'Mulai Chat' Call-to-Action Button.md",
+      "x": 1420,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_bmkg",
+      "type": "file",
+      "file": "BMKG (Indonesian Meteorology, Climatology and Geophysics Agency) data source.md",
+      "x": 1620,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_bps",
+      "type": "file",
+      "file": "BPS (Statistics Indonesia) data source.md",
+      "x": 1820,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_bankindonesia",
+      "type": "file",
+      "file": "Bank Indonesia data source.md",
+      "x": 2020,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_homepage",
+      "type": "file",
+      "file": "Beranda (Homepage) Screen Mockup.md",
+      "x": 1420,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_cuacadangempacard",
+      "type": "file",
+      "file": "Feature Card Cuaca dan Gempa (BMKG).md",
+      "x": 1620,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_kursbankindonesiacard",
+      "type": "file",
+      "file": "Feature Card Kurs Bank Indonesia.md",
+      "x": 1820,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_statistikbpscard",
+      "type": "file",
+      "file": "Feature Card Statistik BPS.md",
+      "x": 2020,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_wilayahadministratifcard",
+      "type": "file",
+      "file": "Feature Card Wilayah Administratif.md",
+      "x": 1420,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_footer",
+      "type": "file",
+      "file": "Footer (GitHub  Documentation  Privacy Policy  Terms).md",
+      "x": 1620,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_herosection",
+      "type": "file",
+      "file": "Hero Section 'Navigasi Data Indonesia dengan Mudah'_1.md",
+      "x": 1820,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_beranda_data_nusantara_assistant_screen_navbar",
+      "type": "file",
+      "file": "Top Navigation Bar (Home  Chat  Docs  ID-EN).md",
+      "x": 2020,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Chat Desktop Mockup",
+      "x": 2800,
+      "y": 800,
+      "width": 880,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_bps_population_card",
+      "type": "file",
+      "file": "BPS Population Projection Card (49.405.808 Jiwa, Jawa Barat, 2023).md",
+      "x": 2820,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_chat_input",
+      "type": "file",
+      "file": "Chat Input Box (Tanyakan seputar data Indonesia...).md",
+      "x": 3020,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_chatui",
+      "type": "file",
+      "file": "Data Nusantara Assistant Chat UI.md",
+      "x": 3220,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_eksplorasi_sidebar",
+      "type": "file",
+      "file": "Eksplorasi Sidebar (Popular Topics Panel).md",
+      "x": 3420,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_weather_feature",
+      "type": "file",
+      "file": "Jakarta Weather Feature (Cuaca Jakarta).md",
+      "x": 2820,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_kemendagri",
+      "type": "file",
+      "file": "Kemendagri (Ministry of Home Affairs) Region Code Reference.md",
+      "x": 3020,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_earthquake_feature",
+      "type": "file",
+      "file": "Latest Earthquake Feature (Gempa Terbaru).md",
+      "x": 3220,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_gov_data_sources",
+      "type": "file",
+      "file": "Official Indonesian Government Data Sources (BMKG, BI, BPS).md",
+      "x": 3420,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_population_feature",
+      "type": "file",
+      "file": "Population Projection Feature (Jumlah Penduduk).md",
+      "x": 2820,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_region_code_feature",
+      "type": "file",
+      "file": "Region Code Lookup Feature (Kode Wilayah).md",
+      "x": 3020,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_currency_feature",
+      "type": "file",
+      "file": "USD Exchange Rate Feature (Kurs USD).md",
+      "x": 3220,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_screen_user_query_population",
+      "type": "file",
+      "file": "User Query 'Berapa jumlah penduduk Jawa Barat'.md",
+      "x": 3420,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Build Tooling Dependencies",
+      "x": 3980,
+      "y": 800,
+      "width": 880,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "n_package_devdependencies_vitejs_plugin_react",
+      "type": "file",
+      "file": "@vitejsplugin-react.md",
+      "x": 4000,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_vitejs_plugin_react",
+      "type": "file",
+      "file": "@vitejsplugin-react_1.md",
+      "x": 4200,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_autoprefixer",
+      "type": "file",
+      "file": "autoprefixer_1.md",
+      "x": 4400,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_autoprefixer",
+      "type": "file",
+      "file": "autoprefixer.md",
+      "x": 4600,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies",
+      "type": "file",
+      "file": "devDependencies.md",
+      "x": 4000,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_postcss",
+      "type": "file",
+      "file": "postcss.md",
+      "x": 4200,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_postcss",
+      "type": "file",
+      "file": "postcss_1.md",
+      "x": 4400,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_tailwindcss",
+      "type": "file",
+      "file": "tailwindcss_1.md",
+      "x": 4600,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_json_tailwindcss",
+      "type": "file",
+      "file": "tailwindcss_2.md",
+      "x": 4000,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_vite",
+      "type": "file",
+      "file": "vite.md",
+      "x": 4200,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_vite",
+      "type": "file",
+      "file": "vite_1.md",
+      "x": 4400,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Docs Desktop Mockup",
+      "x": 5160,
+      "y": 800,
+      "width": 880,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_screen_sdk_datanusantara",
+      "type": "file",
+      "file": "@datanusantarasdk npm package.md",
+      "x": 5180,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_screen_bi_tools",
+      "type": "file",
+      "file": "BI Tools (sidebar nav).md",
+      "x": 5380,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_screen_bps_tools",
+      "type": "file",
+      "file": "BPS Tools (sidebar nav).md",
+      "x": 5580,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_screen_cuaca_bmkg_endpoint",
+      "type": "file",
+      "file": "Cuaca BMKG Endpoint (Public).md",
+      "x": 5780,
+      "y": 880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_screen_deploy",
+      "type": "file",
+      "file": "Deploy (sidebar nav).md",
+      "x": 5180,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_screen_intro_page",
+      "type": "file",
+      "file": "Docs Intro Page (Pengenalan dan Instalasi).md",
+      "x": 5380,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_screen_parameter_global",
+      "type": "file",
+      "file": "Parameter Global (region_id, limit).md",
+      "x": 5580,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_screen_region_tools",
+      "type": "file",
+      "file": "Region Tools (sidebar nav).md",
+      "x": 5780,
+      "y": 960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_screen_statistik_bps_endpoint",
+      "type": "file",
+      "file": "Statistik BPS Endpoint (Key Required).md",
+      "x": 5180,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_screen_weather_tools",
+      "type": "file",
+      "file": "Weather Tools (sidebar nav).md",
+      "x": 5380,
+      "y": 1040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "README Architecture Narrative",
+      "x": 0,
+      "y": 1400,
+      "width": 660,
+      "height": 420,
+      "color": "5"
+    },
+    {
+      "id": "n_readme_qwen25_dashscope",
+      "type": "file",
+      "file": "Qwen 2.5 via Alibaba Cloud DashScope.md",
+      "x": 20,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_mcp_server_separation",
+      "type": "file",
+      "file": "Rationale libtools kept separate from apichat.js for future MCP server reuse.md",
+      "x": 220,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_react_vite_frontend",
+      "type": "file",
+      "file": "React (Vite) frontend (src).md",
+      "x": 420,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_roadmap_streaming",
+      "type": "file",
+      "file": "Roadmap add streaming response to apichat.js.md",
+      "x": 20,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_roadmap_mcp_package",
+      "type": "file",
+      "file": "Roadmap package libtools as standalone MCP server.md",
+      "x": 220,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_api_chat_js",
+      "type": "file",
+      "file": "apichat.js serverless tool-use loop endpoint.md",
+      "x": 420,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_lib_tooldispatcher",
+      "type": "file",
+      "file": "libtoolDispatcher.js name-to-function + UI card mapping.md",
+      "x": 20,
+      "y": 1640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_lib_toolschemas",
+      "type": "file",
+      "file": "libtoolSchemas.js tool definitions.md",
+      "x": 220,
+      "y": 1640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_lib_tools",
+      "type": "file",
+      "file": "libtools stateless data-source implementations.md",
+      "x": 420,
+      "y": 1640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "BI Kurs SOAP Parser",
+      "x": 1400,
+      "y": 1400,
+      "width": 660,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_lib_tools_bikurs_field_aliases",
+      "type": "file",
+      "file": "FIELD_ALIASES.md",
+      "x": 1420,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bikurs",
+      "type": "file",
+      "file": "biKurs.js.md",
+      "x": 1620,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bikurs_buildenvelope",
+      "type": "file",
+      "file": "buildEnvelope().md",
+      "x": 1820,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bikurs_callsoap",
+      "type": "file",
+      "file": "callSoap().md",
+      "x": 1420,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bikurs_getexchangerate",
+      "type": "file",
+      "file": "getExchangeRate().md",
+      "x": 1620,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bikurs_parsediffgramrows",
+      "type": "file",
+      "file": "parseDiffgramRows().md",
+      "x": 1820,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bikurs_parser",
+      "type": "file",
+      "file": "parser.md",
+      "x": 1420,
+      "y": 1640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_tools_bikurs_pickfield",
+      "type": "file",
+      "file": "pickField().md",
+      "x": 1620,
+      "y": 1640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "Chat Mobile Mockup",
+      "x": 2800,
+      "y": 1400,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_mobile_screen_bmkg",
+      "type": "file",
+      "file": "BMKG Data Source Reference.md",
+      "x": 2820,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_mobile_screen_bps",
+      "type": "file",
+      "file": "BPS (Badan Pusat Statistik) Data Source Reference.md",
+      "x": 3020,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_mobile_screen_chatinput",
+      "type": "file",
+      "file": "Chat Input Bar (Tanya sesuatu tentang Indonesia).md",
+      "x": 3220,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_mobile_screen_chatscreen",
+      "type": "file",
+      "file": "Data Nusantara Assistant Chat Screen (Mobile Mockup).md",
+      "x": 2820,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_mobile_screen_langtoggle",
+      "type": "file",
+      "file": "IDEN Language Toggle.md",
+      "x": 3020,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_mobile_screen_populationcard",
+      "type": "file",
+      "file": "Population Data Card (Jawa Timur 2023, 41.4 Juta Jiwa).md",
+      "x": 3220,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_mobile_screen_suggestionchips",
+      "type": "file",
+      "file": "Suggested Query Chips (Cuaca Jakarta, Populasi Jawa Barat).md",
+      "x": 2820,
+      "y": 1640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_chat_data_nusantara_assistant_mobile_screen_weathercard",
+      "type": "file",
+      "file": "Weather Data Card (Jakarta Pusat, 32C Cerah Berawan).md",
+      "x": 3020,
+      "y": 1640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g13",
+      "type": "group",
+      "label": "Layout & Footer Components",
+      "x": 3980,
+      "y": 1400,
+      "width": 660,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_src_layout_footer_footer",
+      "type": "file",
+      "file": "Footer().md",
+      "x": 4000,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_layout_footer",
+      "type": "file",
+      "file": "Footer.jsx.md",
+      "x": 4200,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_layout_footer_links",
+      "type": "file",
+      "file": "LINKS.md",
+      "x": 4400,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_layout_layout_layout",
+      "type": "file",
+      "file": "Layout().md",
+      "x": 4000,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_layout_layout",
+      "type": "file",
+      "file": "Layout.jsx.md",
+      "x": 4200,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_layout_footer_sources",
+      "type": "file",
+      "file": "SOURCES.md",
+      "x": 4400,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g14",
+      "type": "group",
+      "label": "Docs Mobile Mockup",
+      "x": 5160,
+      "y": 1400,
+      "width": 660,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_mobile_screen_core_package",
+      "type": "file",
+      "file": "@data-nusantaracore npm package.md",
+      "x": 5180,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_mobile_screen_cuaca_bmkg_endpoint",
+      "type": "file",
+      "file": "Cuaca BMKG API Endpoint.md",
+      "x": 5380,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_mobile_screen_docspage",
+      "type": "file",
+      "file": "Data Nusantara Assistant Docs Intro Screen.md",
+      "x": 5580,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_mobile_screen_statistik_bps_endpoint",
+      "type": "file",
+      "file": "Statistik BPS API Endpoint.md",
+      "x": 5180,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_mobile_screen_limit_param",
+      "type": "file",
+      "file": "limit Global Parameter.md",
+      "x": 5380,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stitch_dokumentasi_data_nusantara_assistant_mobile_screen_region_id_param",
+      "type": "file",
+      "file": "region_id Global Parameter.md",
+      "x": 5580,
+      "y": 1560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g15",
+      "type": "group",
+      "label": "Translate API Endpoint",
+      "x": 0,
+      "y": 1900,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_api_translate_handler",
+      "type": "file",
+      "file": "handler().md",
+      "x": 20,
+      "y": 1980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_api_translate",
+      "type": "file",
+      "file": "translate.js.md",
+      "x": 220,
+      "y": 1980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g16",
+      "type": "group",
+      "label": "PostCSS Config",
+      "x": 1400,
+      "y": 1900,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_postcss_config",
+      "type": "file",
+      "file": "postcss.config.js.md",
+      "x": 1420,
+      "y": 1980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g17",
+      "type": "group",
+      "label": "Tailwind Config",
+      "x": 2800,
+      "y": 1900,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_tailwind_config",
+      "type": "file",
+      "file": "tailwind.config.js.md",
+      "x": 2820,
+      "y": 1980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g18",
+      "type": "group",
+      "label": "Tailwind CSS Dependency",
+      "x": 3980,
+      "y": 1900,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_tailwindcss_tailwindcss",
+      "type": "file",
+      "file": "tailwindcss.md",
+      "x": 4000,
+      "y": 1980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g19",
+      "type": "group",
+      "label": "Vite Config",
+      "x": 5160,
+      "y": 1900,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_vite_config",
+      "type": "file",
+      "file": "vite.config.js.md",
+      "x": 5180,
+      "y": 1980,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_src_components_cards_earthquakecard_earthquakecard_src_i18n_languagecontext_uselanguage",
+      "fromNode": "n_src_components_cards_earthquakecard_earthquakecard",
+      "toNode": "n_src_i18n_languagecontext_uselanguage",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_earthquakecard_earthquakecard_src_components_cards_earthquakecard",
+      "fromNode": "n_src_components_cards_earthquakecard_earthquakecard",
+      "toNode": "n_src_components_cards_earthquakecard",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_earthquakecard_earthquakecard_src_components_chatbubble",
+      "fromNode": "n_src_components_cards_earthquakecard_earthquakecard",
+      "toNode": "n_src_components_chatbubble",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_src_components_cards_kurscard_kurscard_src_i18n_languagecontext_uselanguage",
+      "fromNode": "n_src_components_cards_kurscard_kurscard",
+      "toNode": "n_src_i18n_languagecontext_uselanguage",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_kurscard_kurscard_src_components_cards_kurscard",
+      "fromNode": "n_src_components_cards_kurscard_kurscard",
+      "toNode": "n_src_components_cards_kurscard",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_kurscard_kurscard_src_components_chatbubble",
+      "fromNode": "n_src_components_cards_kurscard_kurscard",
+      "toNode": "n_src_components_chatbubble",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_src_components_cards_statistikcard_statistikcard_src_i18n_languagecontext_uselanguage",
+      "fromNode": "n_src_components_cards_statistikcard_statistikcard",
+      "toNode": "n_src_i18n_languagecontext_uselanguage",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_statistikcard_statistikcard_src_components_cards_statistikcard",
+      "fromNode": "n_src_components_cards_statistikcard_statistikcard",
+      "toNode": "n_src_components_cards_statistikcard",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_statistikcard_statistikcard_src_components_chatbubble",
+      "fromNode": "n_src_components_cards_statistikcard_statistikcard",
+      "toNode": "n_src_components_chatbubble",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_src_components_cards_weathercard_weathercard_src_i18n_languagecontext_uselanguage",
+      "fromNode": "n_src_components_cards_weathercard_weathercard",
+      "toNode": "n_src_i18n_languagecontext_uselanguage",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_weathercard_weathercard_src_components_cards_weathercard",
+      "fromNode": "n_src_components_cards_weathercard_weathercard",
+      "toNode": "n_src_components_cards_weathercard",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_weathercard_weathercard_src_components_chatbubble",
+      "fromNode": "n_src_components_cards_weathercard_weathercard",
+      "toNode": "n_src_components_chatbubble",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_src_components_cards_wilayahcard_wilayahcard_src_components_cards_wilayahcard",
+      "fromNode": "n_src_components_cards_wilayahcard_wilayahcard",
+      "toNode": "n_src_components_cards_wilayahcard",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_wilayahcard_wilayahcard_src_components_chatbubble",
+      "fromNode": "n_src_components_cards_wilayahcard_wilayahcard",
+      "toNode": "n_src_components_chatbubble",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_src_components_chatbubble_chatbubble_src_i18n_languagecontext_uselanguage",
+      "fromNode": "n_src_components_chatbubble_chatbubble",
+      "toNode": "n_src_i18n_languagecontext_uselanguage",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatbubble_chatbubble_src_pages_chat",
+      "fromNode": "n_src_components_chatbubble_chatbubble",
+      "toNode": "n_src_pages_chat",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatbubble_chatbubble_src_components_chatbubble",
+      "fromNode": "n_src_components_chatbubble_chatbubble",
+      "toNode": "n_src_components_chatbubble",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatinput_chatinput_src_i18n_languagecontext_uselanguage",
+      "fromNode": "n_src_components_chatinput_chatinput",
+      "toNode": "n_src_i18n_languagecontext_uselanguage",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatinput_chatinput_src_pages_chat",
+      "fromNode": "n_src_components_chatinput_chatinput",
+      "toNode": "n_src_pages_chat",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatinput_chatinput_src_components_chatinput",
+      "fromNode": "n_src_components_chatinput_chatinput",
+      "toNode": "n_src_components_chatinput",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_docs_codeblock_codeblock_src_i18n_languagecontext_uselanguage",
+      "fromNode": "n_src_components_docs_codeblock_codeblock",
+      "toNode": "n_src_i18n_languagecontext_uselanguage",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_docs_codeblock_codeblock_src_pages_dokumentasi",
+      "fromNode": "n_src_components_docs_codeblock_codeblock",
+      "toNode": "n_src_pages_dokumentasi",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_docs_codeblock_codeblock_src_components_docs_codeblock",
+      "fromNode": "n_src_components_docs_codeblock_codeblock",
+      "toNode": "n_src_components_docs_codeblock",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_components_cards_earthquakecard",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_components_cards_earthquakecard",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_components_cards_kurscard",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_components_cards_kurscard",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_components_cards_statistikcard",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_components_cards_statistikcard",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_components_cards_weathercard",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_components_cards_weathercard",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_components_cards_wilayahcard",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_components_cards_wilayahcard",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_components_chatbubble",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_components_chatbubble",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_components_chatinput",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_components_chatinput",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_components_docs_codeblock",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_components_docs_codeblock",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_components_docs_docssidebar",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_components_docs_docssidebar",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_components_suggestionchip",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_components_suggestionchip",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_layout_header",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_layout_header",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_pages_beranda",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_pages_beranda",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_pages_chat",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_pages_chat",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_pages_dokumentasi",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_pages_dokumentasi",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_icon_src_components_icon",
+      "fromNode": "n_src_components_icon_icon",
+      "toNode": "n_src_components_icon",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_suggestionchip_suggestionchip_src_pages_chat",
+      "fromNode": "n_src_components_suggestionchip_suggestionchip",
+      "toNode": "n_src_pages_chat",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_suggestionchip_suggestionchip_src_components_suggestionchip",
+      "fromNode": "n_src_components_suggestionchip_suggestionchip",
+      "toNode": "n_src_components_suggestionchip",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_getinitiallang_src_i18n_languagecontext",
+      "fromNode": "n_src_i18n_languagecontext_getinitiallang",
+      "toNode": "n_src_i18n_languagecontext",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_getinitiallang_src_i18n_languagecontext_languageprovider",
+      "fromNode": "n_src_i18n_languagecontext_getinitiallang",
+      "toNode": "n_src_i18n_languagecontext_languageprovider",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_languageprovider_src_main",
+      "fromNode": "n_src_i18n_languagecontext_languageprovider",
+      "toNode": "n_src_main",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_languageprovider_src_i18n_languagecontext",
+      "fromNode": "n_src_i18n_languagecontext_languageprovider",
+      "toNode": "n_src_i18n_languagecontext",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_components_docs_paramtable_paramtable",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_components_docs_paramtable_paramtable",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_i18n_useautotranslate_useautotranslate",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_i18n_useautotranslate_useautotranslate",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_layout_footer_footer",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_layout_footer_footer",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_layout_header_header",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_layout_header_header",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_pages_beranda_beranda",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_pages_beranda_beranda",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_pages_chat_chat",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_pages_chat_chat",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_pages_dokumentasi_dokumentasi",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_pages_dokumentasi_dokumentasi",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_components_cards_earthquakecard",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_components_cards_earthquakecard",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_components_cards_kurscard",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_components_cards_kurscard",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_components_cards_statistikcard",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_components_cards_statistikcard",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_components_cards_weathercard",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_components_cards_weathercard",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_components_chatbubble",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_components_chatbubble",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_components_chatinput",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_components_chatinput",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_components_docs_codeblock",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_components_docs_codeblock",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_components_docs_paramtable",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_components_docs_paramtable",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_i18n_useautotranslate",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_i18n_useautotranslate",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_layout_footer",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_layout_footer",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_layout_header",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_layout_header",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_pages_beranda",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_pages_beranda",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_pages_chat",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_pages_chat",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_pages_dokumentasi",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_pages_dokumentasi",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_uselanguage_src_i18n_languagecontext",
+      "fromNode": "n_src_i18n_languagecontext_uselanguage",
+      "toNode": "n_src_i18n_languagecontext",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_header_header_src_layout_layout",
+      "fromNode": "n_src_layout_header_header",
+      "toNode": "n_src_layout_layout",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_header_header_src_layout_header",
+      "fromNode": "n_src_layout_header_header",
+      "toNode": "n_src_layout_header",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_header_navitem_src_layout_header",
+      "fromNode": "n_src_layout_header_navitem",
+      "toNode": "n_src_layout_header",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_pages_chat_chat_src_app",
+      "fromNode": "n_src_pages_chat_chat",
+      "toNode": "n_src_app",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_pages_chat_chat_src_pages_chat",
+      "fromNode": "n_src_pages_chat_chat",
+      "toNode": "n_src_pages_chat",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_buildenvelope_lib_tools_bikurs_callsoap",
+      "fromNode": "n_lib_tools_bikurs_buildenvelope",
+      "toNode": "n_lib_tools_bikurs_callsoap",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_buildenvelope_lib_tools_bikurs",
+      "fromNode": "n_lib_tools_bikurs_buildenvelope",
+      "toNode": "n_lib_tools_bikurs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_callsoap_lib_tools_bikurs_getexchangerate",
+      "fromNode": "n_lib_tools_bikurs_callsoap",
+      "toNode": "n_lib_tools_bikurs_getexchangerate",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_callsoap_lib_tools_bikurs",
+      "fromNode": "n_lib_tools_bikurs_callsoap",
+      "toNode": "n_lib_tools_bikurs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_getexchangerate_lib_tools_bikurs_parsediffgramrows",
+      "fromNode": "n_lib_tools_bikurs_getexchangerate",
+      "toNode": "n_lib_tools_bikurs_parsediffgramrows",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_getexchangerate_lib_tools_bikurs_pickfield",
+      "fromNode": "n_lib_tools_bikurs_getexchangerate",
+      "toNode": "n_lib_tools_bikurs_pickfield",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_getexchangerate_lib_tools_bikurs",
+      "fromNode": "n_lib_tools_bikurs_getexchangerate",
+      "toNode": "n_lib_tools_bikurs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_getexchangerate_lib_tooldispatcher",
+      "fromNode": "n_lib_tools_bikurs_getexchangerate",
+      "toNode": "n_lib_tooldispatcher",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_parsediffgramrows_lib_tools_bikurs",
+      "fromNode": "n_lib_tools_bikurs_parsediffgramrows",
+      "toNode": "n_lib_tools_bikurs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_pickfield_lib_tools_bikurs",
+      "fromNode": "n_lib_tools_bikurs_pickfield",
+      "toNode": "n_lib_tools_bikurs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_footer_footer_src_layout_layout",
+      "fromNode": "n_src_layout_footer_footer",
+      "toNode": "n_src_layout_layout",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_footer_footer_src_layout_footer",
+      "fromNode": "n_src_layout_footer_footer",
+      "toNode": "n_src_layout_footer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_layout_layout_src_app",
+      "fromNode": "n_src_layout_layout_layout",
+      "toNode": "n_src_app",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_layout_layout_src_layout_layout",
+      "fromNode": "n_src_layout_layout_layout",
+      "toNode": "n_src_layout_layout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_api_translate_handler_api_translate",
+      "fromNode": "n_api_translate_handler",
+      "toNode": "n_api_translate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_app_src_main",
+      "fromNode": "n_src_app_app",
+      "toNode": "n_src_main",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_app_src_app",
+      "fromNode": "n_src_app_app",
+      "toNode": "n_src_app",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_categorycard_categorycard_src_pages_beranda",
+      "fromNode": "n_src_components_categorycard_categorycard",
+      "toNode": "n_src_pages_beranda",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_categorycard_categorycard_src_components_categorycard",
+      "fromNode": "n_src_components_categorycard_categorycard",
+      "toNode": "n_src_components_categorycard",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_docs_docssidebar_docssidebar_src_pages_dokumentasi",
+      "fromNode": "n_src_components_docs_docssidebar_docssidebar",
+      "toNode": "n_src_pages_dokumentasi",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_docs_docssidebar_docssidebar_src_components_docs_docssidebar",
+      "fromNode": "n_src_components_docs_docssidebar_docssidebar",
+      "toNode": "n_src_components_docs_docssidebar",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_docs_paramtable_paramtable_src_pages_dokumentasi",
+      "fromNode": "n_src_components_docs_paramtable_paramtable",
+      "toNode": "n_src_pages_dokumentasi",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_docs_paramtable_paramtable_src_components_docs_paramtable",
+      "fromNode": "n_src_components_docs_paramtable_paramtable",
+      "toNode": "n_src_components_docs_paramtable",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_useautotranslate_loadcache_src_i18n_useautotranslate_useautotranslate",
+      "fromNode": "n_src_i18n_useautotranslate_loadcache",
+      "toNode": "n_src_i18n_useautotranslate_useautotranslate",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_useautotranslate_loadcache_src_i18n_useautotranslate",
+      "fromNode": "n_src_i18n_useautotranslate_loadcache",
+      "toNode": "n_src_i18n_useautotranslate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_useautotranslate_savecache_src_i18n_useautotranslate_useautotranslate",
+      "fromNode": "n_src_i18n_useautotranslate_savecache",
+      "toNode": "n_src_i18n_useautotranslate_useautotranslate",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_useautotranslate_savecache_src_i18n_useautotranslate",
+      "fromNode": "n_src_i18n_useautotranslate_savecache",
+      "toNode": "n_src_i18n_useautotranslate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_useautotranslate_useautotranslate_src_pages_dokumentasi_dokumentasi",
+      "fromNode": "n_src_i18n_useautotranslate_useautotranslate",
+      "toNode": "n_src_pages_dokumentasi_dokumentasi",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_useautotranslate_useautotranslate_src_pages_dokumentasi",
+      "fromNode": "n_src_i18n_useautotranslate_useautotranslate",
+      "toNode": "n_src_pages_dokumentasi",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_useautotranslate_useautotranslate_src_i18n_useautotranslate",
+      "fromNode": "n_src_i18n_useautotranslate_useautotranslate",
+      "toNode": "n_src_i18n_useautotranslate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_pages_beranda_beranda_src_app",
+      "fromNode": "n_src_pages_beranda_beranda",
+      "toNode": "n_src_app",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_pages_beranda_beranda_src_pages_beranda",
+      "fromNode": "n_src_pages_beranda_beranda",
+      "toNode": "n_src_pages_beranda",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_pages_dokumentasi_dokumentasi_src_app",
+      "fromNode": "n_src_pages_dokumentasi_dokumentasi",
+      "toNode": "n_src_app",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_pages_dokumentasi_dokumentasi_src_pages_dokumentasi",
+      "fromNode": "n_src_pages_dokumentasi_dokumentasi",
+      "toNode": "n_src_pages_dokumentasi",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_api_chat_handler_lib_tooldispatcher_runtool",
+      "fromNode": "n_api_chat_handler",
+      "toNode": "n_lib_tooldispatcher_runtool",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_api_chat_handler_api_chat",
+      "fromNode": "n_api_chat_handler",
+      "toNode": "n_api_chat",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tooldispatcher_runtool_api_chat",
+      "fromNode": "n_lib_tooldispatcher_runtool",
+      "toNode": "n_api_chat",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tooldispatcher_runtool_lib_tooldispatcher",
+      "fromNode": "n_lib_tooldispatcher_runtool",
+      "toNode": "n_lib_tooldispatcher",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bmkgearthquake_fetchjson_lib_tools_bmkgearthquake_getearthquakelatest",
+      "fromNode": "n_lib_tools_bmkgearthquake_fetchjson",
+      "toNode": "n_lib_tools_bmkgearthquake_getearthquakelatest",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bmkgearthquake_fetchjson_lib_tools_bmkgearthquake_getearthquakelist",
+      "fromNode": "n_lib_tools_bmkgearthquake_fetchjson",
+      "toNode": "n_lib_tools_bmkgearthquake_getearthquakelist",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bmkgearthquake_fetchjson_lib_tools_bmkgearthquake",
+      "fromNode": "n_lib_tools_bmkgearthquake_fetchjson",
+      "toNode": "n_lib_tools_bmkgearthquake",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bmkgearthquake_getearthquakelatest_lib_tooldispatcher",
+      "fromNode": "n_lib_tools_bmkgearthquake_getearthquakelatest",
+      "toNode": "n_lib_tooldispatcher",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bmkgearthquake_getearthquakelatest_lib_tools_bmkgearthquake",
+      "fromNode": "n_lib_tools_bmkgearthquake_getearthquakelatest",
+      "toNode": "n_lib_tools_bmkgearthquake",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bmkgearthquake_getearthquakelist_lib_tooldispatcher",
+      "fromNode": "n_lib_tools_bmkgearthquake_getearthquakelist",
+      "toNode": "n_lib_tooldispatcher",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bmkgearthquake_getearthquakelist_lib_tools_bmkgearthquake",
+      "fromNode": "n_lib_tools_bmkgearthquake_getearthquakelist",
+      "toNode": "n_lib_tools_bmkgearthquake",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bmkgweather_getweather_lib_tools_bmkgweather",
+      "fromNode": "n_lib_tools_bmkgweather_getweather",
+      "toNode": "n_lib_tools_bmkgweather",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bmkgweather_getweather_lib_tooldispatcher",
+      "fromNode": "n_lib_tools_bmkgweather_getweather",
+      "toNode": "n_lib_tooldispatcher",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_lib_tools_bpsstatistik_getstatistic_lib_tools_bpsstatistik",
+      "fromNode": "n_lib_tools_bpsstatistik_getstatistic",
+      "toNode": "n_lib_tools_bpsstatistik",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bpsstatistik_getstatistic_lib_tooldispatcher",
+      "fromNode": "n_lib_tools_bpsstatistik_getstatistic",
+      "toNode": "n_lib_tooldispatcher",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_lib_tools_wilayah_fetchjson_lib_tools_wilayah_getregioninfo",
+      "fromNode": "n_lib_tools_wilayah_fetchjson",
+      "toNode": "n_lib_tools_wilayah_getregioninfo",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_wilayah_fetchjson_lib_tools_wilayah",
+      "fromNode": "n_lib_tools_wilayah_fetchjson",
+      "toNode": "n_lib_tools_wilayah",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_wilayah_findbyname_lib_tools_wilayah_getregioninfo",
+      "fromNode": "n_lib_tools_wilayah_findbyname",
+      "toNode": "n_lib_tools_wilayah_getregioninfo",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_wilayah_findbyname_lib_tools_wilayah",
+      "fromNode": "n_lib_tools_wilayah_findbyname",
+      "toNode": "n_lib_tools_wilayah",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_wilayah_getregioninfo_lib_tools_wilayah",
+      "fromNode": "n_lib_tools_wilayah_getregioninfo",
+      "toNode": "n_lib_tools_wilayah",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_wilayah_getregioninfo_lib_tooldispatcher",
+      "fromNode": "n_lib_tools_wilayah_getregioninfo",
+      "toNode": "n_lib_tooldispatcher",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_src_components_cards_earthquakecard_src_components_icon",
+      "fromNode": "n_src_components_cards_earthquakecard",
+      "toNode": "n_src_components_icon",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_earthquakecard_src_i18n_languagecontext",
+      "fromNode": "n_src_components_cards_earthquakecard",
+      "toNode": "n_src_i18n_languagecontext",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_earthquakecard_src_components_chatbubble",
+      "fromNode": "n_src_components_cards_earthquakecard",
+      "toNode": "n_src_components_chatbubble",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_kurscard_src_components_icon",
+      "fromNode": "n_src_components_cards_kurscard",
+      "toNode": "n_src_components_icon",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_kurscard_src_i18n_languagecontext",
+      "fromNode": "n_src_components_cards_kurscard",
+      "toNode": "n_src_i18n_languagecontext",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_kurscard_src_components_chatbubble",
+      "fromNode": "n_src_components_cards_kurscard",
+      "toNode": "n_src_components_chatbubble",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_statistikcard_src_components_icon",
+      "fromNode": "n_src_components_cards_statistikcard",
+      "toNode": "n_src_components_icon",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_statistikcard_src_i18n_languagecontext",
+      "fromNode": "n_src_components_cards_statistikcard",
+      "toNode": "n_src_i18n_languagecontext",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_statistikcard_src_components_chatbubble",
+      "fromNode": "n_src_components_cards_statistikcard",
+      "toNode": "n_src_components_chatbubble",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_weathercard_src_components_icon",
+      "fromNode": "n_src_components_cards_weathercard",
+      "toNode": "n_src_components_icon",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_weathercard_src_i18n_languagecontext",
+      "fromNode": "n_src_components_cards_weathercard",
+      "toNode": "n_src_i18n_languagecontext",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_weathercard_src_components_chatbubble",
+      "fromNode": "n_src_components_cards_weathercard",
+      "toNode": "n_src_components_chatbubble",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_wilayahcard_src_components_icon",
+      "fromNode": "n_src_components_cards_wilayahcard",
+      "toNode": "n_src_components_icon",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_cards_wilayahcard_src_components_chatbubble",
+      "fromNode": "n_src_components_cards_wilayahcard",
+      "toNode": "n_src_components_chatbubble",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatbubble_src_i18n_languagecontext",
+      "fromNode": "n_src_components_chatbubble",
+      "toNode": "n_src_i18n_languagecontext",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatbubble_src_components_icon",
+      "fromNode": "n_src_components_chatbubble",
+      "toNode": "n_src_components_icon",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatbubble_src_pages_chat",
+      "fromNode": "n_src_components_chatbubble",
+      "toNode": "n_src_pages_chat",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatbubble_src_components_chatbubble_card_components",
+      "fromNode": "n_src_components_chatbubble",
+      "toNode": "n_src_components_chatbubble_card_components",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatinput_src_i18n_languagecontext",
+      "fromNode": "n_src_components_chatinput",
+      "toNode": "n_src_i18n_languagecontext",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatinput_src_components_icon",
+      "fromNode": "n_src_components_chatinput",
+      "toNode": "n_src_components_icon",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_chatinput_src_pages_chat",
+      "fromNode": "n_src_components_chatinput",
+      "toNode": "n_src_pages_chat",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_docs_codeblock_src_components_icon",
+      "fromNode": "n_src_components_docs_codeblock",
+      "toNode": "n_src_components_icon",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_docs_codeblock_src_i18n_languagecontext",
+      "fromNode": "n_src_components_docs_codeblock",
+      "toNode": "n_src_i18n_languagecontext",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_docs_codeblock_src_pages_dokumentasi",
+      "fromNode": "n_src_components_docs_codeblock",
+      "toNode": "n_src_pages_dokumentasi",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_src_components_docs_docssidebar",
+      "fromNode": "n_src_components_icon",
+      "toNode": "n_src_components_docs_docssidebar",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_src_components_suggestionchip",
+      "fromNode": "n_src_components_icon",
+      "toNode": "n_src_components_suggestionchip",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_src_layout_header",
+      "fromNode": "n_src_components_icon",
+      "toNode": "n_src_layout_header",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_src_pages_beranda",
+      "fromNode": "n_src_components_icon",
+      "toNode": "n_src_pages_beranda",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_src_pages_chat",
+      "fromNode": "n_src_components_icon",
+      "toNode": "n_src_pages_chat",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_icon_src_pages_dokumentasi",
+      "fromNode": "n_src_components_icon",
+      "toNode": "n_src_pages_dokumentasi",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_suggestionchip_src_pages_chat",
+      "fromNode": "n_src_components_suggestionchip",
+      "toNode": "n_src_pages_chat",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_src_i18n_translations_translations",
+      "fromNode": "n_src_i18n_languagecontext",
+      "toNode": "n_src_i18n_translations_translations",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_src_components_docs_paramtable",
+      "fromNode": "n_src_i18n_languagecontext",
+      "toNode": "n_src_components_docs_paramtable",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_src_i18n_translations",
+      "fromNode": "n_src_i18n_languagecontext",
+      "toNode": "n_src_i18n_translations",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_src_i18n_useautotranslate",
+      "fromNode": "n_src_i18n_languagecontext",
+      "toNode": "n_src_i18n_useautotranslate",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_src_layout_footer",
+      "fromNode": "n_src_i18n_languagecontext",
+      "toNode": "n_src_layout_footer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_src_layout_header",
+      "fromNode": "n_src_i18n_languagecontext",
+      "toNode": "n_src_layout_header",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_src_main",
+      "fromNode": "n_src_i18n_languagecontext",
+      "toNode": "n_src_main",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_src_pages_beranda",
+      "fromNode": "n_src_i18n_languagecontext",
+      "toNode": "n_src_pages_beranda",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_src_pages_chat",
+      "fromNode": "n_src_i18n_languagecontext",
+      "toNode": "n_src_pages_chat",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_src_pages_dokumentasi",
+      "fromNode": "n_src_i18n_languagecontext",
+      "toNode": "n_src_pages_dokumentasi",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_languagecontext_src_i18n_languagecontext_languagecontext",
+      "fromNode": "n_src_i18n_languagecontext",
+      "toNode": "n_src_i18n_languagecontext_languagecontext",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_i18n_translations_src_i18n_translations_translations",
+      "fromNode": "n_src_i18n_translations",
+      "toNode": "n_src_i18n_translations_translations",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_header_src_layout_layout",
+      "fromNode": "n_src_layout_header",
+      "toNode": "n_src_layout_layout",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_pages_chat_src_app",
+      "fromNode": "n_src_pages_chat",
+      "toNode": "n_src_app",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_pages_chat_src_pages_chat_suggestion_icons",
+      "fromNode": "n_src_pages_chat",
+      "toNode": "n_src_pages_chat_suggestion_icons",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_lib_tooldispatcher",
+      "fromNode": "n_lib_tools_bikurs",
+      "toNode": "n_lib_tooldispatcher",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_lib_tools_bikurs_parser",
+      "fromNode": "n_lib_tools_bikurs",
+      "toNode": "n_lib_tools_bikurs_parser",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_lib_tools_bikurs_lib_tools_bikurs_field_aliases",
+      "fromNode": "n_lib_tools_bikurs",
+      "toNode": "n_lib_tools_bikurs_field_aliases",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_footer_src_layout_layout",
+      "fromNode": "n_src_layout_footer",
+      "toNode": "n_src_layout_layout",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_footer_src_layout_footer_links",
+      "fromNode": "n_src_layout_footer",
+      "toNode": "n_src_layout_footer_links",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_footer_src_layout_footer_sources",
+      "fromNode": "n_src_layout_footer",
+      "toNode": "n_src_layout_footer_sources",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_layout_layout_src_app",
+      "fromNode": "n_src_layout_layout",
+      "toNode": "n_src_app",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_dependencies",
+      "fromNode": "n_package",
+      "toNode": "n_package_dependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_devdependencies",
+      "fromNode": "n_package",
+      "toNode": "n_package_devdependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_name",
+      "fromNode": "n_package",
+      "toNode": "n_package_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_private",
+      "fromNode": "n_package",
+      "toNode": "n_package_private",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_version",
+      "fromNode": "n_package",
+      "toNode": "n_package_version",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_type",
+      "fromNode": "n_package",
+      "toNode": "n_package_type",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_scripts",
+      "fromNode": "n_package",
+      "toNode": "n_package_scripts",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_fast_xml_parser",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_fast_xml_parser",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_google_translate_api_x",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_google_translate_api_x",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_react",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_react_dom",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_react_dom",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_react_router_dom",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_react_router_dom",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_fast_xml_parser_fast_xml_parser",
+      "fromNode": "n_package_dependencies_fast_xml_parser",
+      "toNode": "n_fast_xml_parser",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_google_translate_api_x_google_translate_api_x",
+      "fromNode": "n_package_dependencies_google_translate_api_x",
+      "toNode": "n_google_translate_api_x",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_react_react",
+      "fromNode": "n_package_dependencies_react",
+      "toNode": "n_react",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_react_dom_react_dom",
+      "fromNode": "n_package_dependencies_react_dom",
+      "toNode": "n_react_dom",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_react_router_dom_react_router_dom",
+      "fromNode": "n_package_dependencies_react_router_dom",
+      "toNode": "n_react_router_dom",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_dev_api",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_dev_api",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_dev",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_dev",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_build",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_build",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_preview",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_preview",
+      "label": "contains [EXTRACTED]"
+    }
+  ]
+}

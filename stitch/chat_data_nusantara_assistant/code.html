@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Data Nusantara Assistant - Chat</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-container": "#6d3000",
+                        "secondary-container": "#feb700",
+                        "primary-fixed": "#c6e7ff",
+                        "on-secondary-fixed": "#271900",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eeeef0",
+                        "surface": "#f9f9fc",
+                        "on-secondary-container": "#6b4b00",
+                        "secondary": "#7c5800",
+                        "tertiary-container": "#ff9249",
+                        "on-background": "#1a1c1e",
+                        "primary-container": "#00baff",
+                        "inverse-primary": "#81cfff",
+                        "primary": "#00658d",
+                        "surface-container-low": "#f3f3f6",
+                        "tertiary-fixed": "#ffdbc8",
+                        "on-tertiary-fixed-variant": "#753400",
+                        "on-primary-container": "#004764",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#3d4850",
+                        "outline-variant": "#bdc8d2",
+                        "outline": "#6d7881",
+                        "on-tertiary-fixed": "#321200",
+                        "secondary-fixed-dim": "#ffba20",
+                        "primary-fixed-dim": "#81cfff",
+                        "surface-container-high": "#e8e8ea",
+                        "surface-container-highest": "#e2e2e5",
+                        "inverse-on-surface": "#f0f0f3",
+                        "surface-dim": "#dadadc",
+                        "on-surface": "#1a1c1e",
+                        "tertiary-fixed-dim": "#ffb68b",
+                        "on-primary-fixed": "#001e2d",
+                        "on-secondary-fixed-variant": "#5e4200",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdea8",
+                        "tertiary": "#994700",
+                        "inverse-surface": "#2f3133",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f9fc",
+                        "on-primary-fixed-variant": "#004c6b",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f9f9fc",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#00658d",
+                        "surface-variant": "#e2e2e5"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "base": "8px",
+                        "sm": "12px",
+                        "md": "24px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "xs": "4px"
+                    },
+                    fontFamily: {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"]
+                    },
+                    fontSize: {
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }],
+                        "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "700" }],
+                        "label-sm": ["12px", { lineHeight: "16px", fontWeight: "500" }],
+                        "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for chat */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background-color: #bdc8d2; border-radius: 20px; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md h-screen flex flex-col overflow-hidden antialiased">
+<!-- TopNavBar (From Shared Components) -->
+<nav class="bg-surface/80 backdrop-blur-md shadow-sm docked full-width top-0 sticky z-50 flex justify-between items-center w-full px-base md:px-md max-w-container-max mx-auto h-16">
+<div class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined icon-filled text-primary">data_usage</span>
+            Data Nusantara Assistant
+        </div>
+<div class="hidden md:flex gap-6 h-full items-center">
+<a class="text-on-surface-variant hover:text-primary hover:opacity-80 transition-all duration-200 font-label-md text-label-md h-full flex items-center" href="#">Home</a>
+<!-- Active State Navigation -->
+<a class="text-primary border-b-2 border-primary h-full flex items-center font-label-md text-label-md transition-all duration-200" href="#">Chat</a>
+<a class="text-on-surface-variant hover:text-primary hover:opacity-80 transition-all duration-200 font-label-md text-label-md h-full flex items-center" href="#">Docs</a>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-full p-1 border border-outline-variant">
+<button class="bg-primary text-on-primary rounded-full px-3 py-1 font-label-sm text-label-sm shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">ID</button>
+<button class="text-on-surface-variant px-3 py-1 font-label-sm text-label-sm hover:text-primary transition-colors">EN</button>
+</div>
+</nav>
+<!-- Main Layout -->
+<main class="flex-1 flex overflow-hidden max-w-container-max w-full mx-auto">
+<!-- Left Sidebar (Popular Questions) -->
+<aside class="hidden lg:flex w-80 flex-col bg-surface-container-low border-r border-outline-variant p-md shrink-0 h-full overflow-y-auto">
+<div class="mb-8">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Eksplorasi</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Topik populer hari ini berdasarkan pencarian warga.</p>
+</div>
+<div class="flex flex-col gap-sm">
+<!-- Action Chips -->
+<button class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant hover:border-primary hover:bg-surface transition-colors text-left group">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary group-hover:bg-secondary-container/40 transition-colors">
+<span class="material-symbols-outlined">partly_cloudy_day</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface flex-1">Cuaca Jakarta hari ini</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-sm">arrow_forward</span>
+</button>
+<button class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant hover:border-tertiary-container/50 hover:bg-surface transition-colors text-left group">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/20 flex items-center justify-center text-tertiary group-hover:bg-tertiary-container/40 transition-colors">
+<span class="material-symbols-outlined">file_download_off</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface flex-1">Gempa terbaru</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors text-sm">arrow_forward</span>
+</button>
+<button class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant hover:border-primary hover:bg-surface transition-colors text-left group">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary group-hover:bg-primary-container/40 transition-colors">
+<span class="material-symbols-outlined">currency_exchange</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface flex-1">Kurs USD</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-sm">arrow_forward</span>
+</button>
+<button class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant hover:border-primary hover:bg-surface transition-colors text-left group">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant group-hover:bg-outline-variant transition-colors">
+<span class="material-symbols-outlined">map</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface flex-1">Kode wilayah Bandung</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-sm">arrow_forward</span>
+</button>
+<button class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant hover:border-primary hover:bg-surface transition-colors text-left group">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant group-hover:bg-outline-variant transition-colors">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface flex-1">Jumlah penduduk Jabar</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="mt-auto pt-8">
+<div class="p-sm rounded-lg bg-primary-container/10 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">info</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Data bersumber dari portal API resmi pemerintah Indonesia (BMKG, BI, BPS).</p>
+</div>
+</div>
+</aside>
+<!-- Main Chat Area -->
+<section class="flex-1 flex flex-col relative bg-background">
+<!-- Chat Feed -->
+<div class="flex-1 overflow-y-auto p-md flex flex-col gap-6" id="chat-feed">
+<!-- Initial Greeting -->
+<div class="flex w-full justify-center mt-4 mb-8">
+<div class="bg-surface-container-lowest shadow-[0px_4px_20px_rgba(0,0,0,0.04)] border border-outline-variant rounded-2xl p-md flex flex-col items-center text-center max-w-md">
+<div class="w-16 h-16 bg-primary-container/20 text-primary rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined icon-filled text-3xl">smart_toy</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Halo! Ada yang bisa saya bantu?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Tanyakan tentang cuaca, data penduduk, ekonomi, atau informasi wilayah di seluruh Indonesia.</p>
+</div>
+</div>
+<!-- Interaction 1: Weather -->
+<div class="flex flex-col gap-2 items-end w-full">
+<div class="bg-primary text-on-primary rounded-2xl rounded-tr-sm p-sm md:p-md max-w-[85%] md:max-w-[70%] font-body-md text-body-md shadow-sm">
+                        Cuaca Jakarta hari ini
+                    </div>
+</div>
+<div class="flex flex-col gap-2 items-start w-full">
+<div class="flex items-center gap-2 mb-1 ml-1">
+<span class="material-symbols-outlined icon-filled text-primary text-sm">smart_toy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Data Nusantara Assistant</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant shadow-[0px_4px_20px_rgba(0,0,0,0.04)] text-on-surface rounded-2xl rounded-tl-sm p-sm md:p-md max-w-[95%] md:max-w-[80%]">
+<p class="font-body-md text-body-md mb-4">Berikut adalah prakiraan cuaca untuk wilayah DKI Jakarta hari ini, berdasarkan data terbaru dari BMKG:</p>
+<!-- Weather Data Card -->
+<div class="border border-outline-variant rounded-xl p-md bg-surface-bright flex flex-col md:flex-row items-center gap-6">
+<div class="flex flex-col items-center justify-center border-r border-outline-variant pr-6">
+<span class="material-symbols-outlined text-secondary text-5xl mb-2 icon-filled">sunny</span>
+<span class="font-headline-xl text-headline-xl text-on-surface">32°</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Cerah Berawan</span>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4 w-full">
+<div>
+<span class="font-label-sm text-label-sm text-outline block mb-1">Kelembapan</span>
+<span class="font-body-md text-body-md text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">water_drop</span> 65%</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block mb-1">Angin</span>
+<span class="font-body-md text-body-md text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">air</span> 10 km/h</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block mb-1">Kualitas Udara</span>
+<span class="font-body-md text-body-md text-tertiary-container flex items-center gap-1"><span class="material-symbols-outlined text-sm">masks</span> Sedang (75)</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block mb-1">Pembaruan Terakhir</span>
+<span class="font-body-md text-body-md text-on-surface">10:00 WIB</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interaction 2: Currency -->
+<div class="flex flex-col gap-2 items-end w-full mt-4">
+<div class="bg-primary text-on-primary rounded-2xl rounded-tr-sm p-sm md:p-md max-w-[85%] md:max-w-[70%] font-body-md text-body-md shadow-sm">
+                        Berapa kurs USD saat ini?
+                    </div>
+</div>
+<div class="flex flex-col gap-2 items-start w-full">
+<div class="flex items-center gap-2 mb-1 ml-1">
+<span class="material-symbols-outlined icon-filled text-primary text-sm">smart_toy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Data Nusantara Assistant</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant shadow-[0px_4px_20px_rgba(0,0,0,0.04)] text-on-surface rounded-2xl rounded-tl-sm p-sm md:p-md max-w-[95%] md:max-w-[80%]">
+<p class="font-body-md text-body-md mb-4">Informasi nilai tukar Rupiah terhadap Dolar Amerika (USD) referensi Bank Indonesia hari ini:</p>
+<!-- Currency Data Card -->
+<div class="border border-outline-variant rounded-xl overflow-hidden">
+<div class="bg-surface-container-low px-md py-3 border-b border-outline-variant flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">attach_money</span>
+<span class="font-label-md text-label-md text-on-surface">USD / IDR</span>
+</div>
+<span class="bg-surface-container text-on-surface-variant px-2 py-1 rounded font-label-sm text-label-sm">JISDOR</span>
+</div>
+<div class="p-md grid grid-cols-2 gap-6 bg-surface-bright">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-1">Kurs Jual</span>
+<span class="font-headline-lg text-headline-lg text-on-surface block">Rp 15.650</span>
+<span class="text-error flex items-center gap-1 font-label-sm text-label-sm mt-1"><span class="material-symbols-outlined text-sm">trending_up</span> +0.2%</span>
+</div>
+<div class="border-l border-outline-variant pl-6">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-1">Kurs Beli</span>
+<span class="font-headline-lg text-headline-lg text-on-surface block">Rp 15.500</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interaction 3: Admin Breadcrumb -->
+<div class="flex flex-col gap-2 items-end w-full mt-4">
+<div class="bg-primary text-on-primary rounded-2xl rounded-tr-sm p-sm md:p-md max-w-[85%] md:max-w-[70%] font-body-md text-body-md shadow-sm">
+                        Kode wilayah administrasi Bandung
+                    </div>
+</div>
+<div class="flex flex-col gap-2 items-start w-full">
+<div class="flex items-center gap-2 mb-1 ml-1">
+<span class="material-symbols-outlined icon-filled text-primary text-sm">smart_toy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Data Nusantara Assistant</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant shadow-[0px_4px_20px_rgba(0,0,0,0.04)] text-on-surface rounded-2xl rounded-tl-sm p-sm md:p-md max-w-[95%] md:max-w-[80%]">
+<!-- Admin Breadcrumb Card -->
+<div class="border border-outline-variant rounded-xl p-sm bg-surface-bright flex flex-wrap items-center gap-2 mb-4">
+<span class="bg-surface-container px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant border border-outline-variant/50">Jawa Barat (32)</span>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+<span class="bg-primary-container/20 text-on-primary-container px-3 py-1.5 rounded-lg font-label-md text-label-md border border-primary-container/30">Kota Bandung (32.73)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Kode referensi wilayah administrasi pemerintahan (Kemendagri) untuk Kota Bandung adalah <strong>32.73</strong>.</p>
+</div>
+</div>
+<!-- Interaction 4: BPS Stat -->
+<div class="flex flex-col gap-2 items-end w-full mt-4">
+<div class="bg-primary text-on-primary rounded-2xl rounded-tr-sm p-sm md:p-md max-w-[85%] md:max-w-[70%] font-body-md text-body-md shadow-sm">
+                        Berapa jumlah penduduk Jawa Barat?
+                    </div>
+</div>
+<div class="flex flex-col gap-2 items-start w-full mb-8">
+<div class="flex items-center gap-2 mb-1 ml-1">
+<span class="material-symbols-outlined icon-filled text-primary text-sm">smart_toy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Data Nusantara Assistant</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant shadow-[0px_4px_20px_rgba(0,0,0,0.04)] text-on-surface rounded-2xl rounded-tl-sm p-sm md:p-md max-w-[95%] md:max-w-[80%]">
+<!-- BPS Large Stat Card -->
+<div class="relative overflow-hidden rounded-xl border border-outline-variant bg-surface-container-lowest p-md mb-4 group">
+<!-- Decorative background pattern (CSS driven) -->
+<div class="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#00658d_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg">analytics</span>
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Proyeksi Penduduk (BPS)</span>
+</div>
+<span class="font-headline-xl text-headline-xl text-primary font-bold mb-1">49.405.808</span>
+<span class="font-body-lg text-body-lg text-on-surface-variant">Jiwa</span>
+<div class="mt-6 pt-4 border-t border-outline-variant flex justify-between items-center w-full">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Provinsi</span>
+<span class="font-label-md text-label-md text-on-surface">Jawa Barat</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-outline">Tahun Data</span>
+<span class="font-label-md text-label-md text-on-surface">2023 (Estimasi)</span>
+</div>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Data di atas merupakan hasil proyeksi penduduk sementara oleh Badan Pusat Statistik (BPS) Provinsi Jawa Barat.</p>
+</div>
+</div>
+</div>
+<!-- Input Area (Bottom Fixed inside main container) -->
+<div class="p-4 md:p-md bg-surface/90 backdrop-blur-md border-t border-outline-variant z-10 w-full shrink-0">
+<div class="max-w-4xl mx-auto relative flex items-center">
+<input class="w-full h-[56px] pl-6 pr-16 rounded-full border border-outline-variant bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-[0px_4px_20px_rgba(0,0,0,0.04)] transition-all" placeholder="Tanyakan seputar data Indonesia..." type="text"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-primary hover:bg-primary/90 text-on-primary rounded-full flex items-center justify-center transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+<div class="text-center mt-2">
+<span class="font-label-sm text-label-sm text-outline">Assistant dapat membuat kesalahan. Selalu verifikasi data resmi.</span>
+</div>
+</div>
+</section>
+</main>
+<script>
+        // Simple script to auto-scroll chat to bottom on load (simulating active session)
+        document.addEventListener("DOMContentLoaded", () => {
+            const chatFeed = document.getElementById('chat-feed');
+            if(chatFeed) {
+                chatFeed.scrollTop = chatFeed.scrollHeight;
+            }
+        });
+    </script>
+</body></html>

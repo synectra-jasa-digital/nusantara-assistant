@@ -1,0 +1,267 @@
+{
+  "api/chat.js": {
+    "mtime": 1787740972.3378317,
+    "ast_hash": "c810741608c99b90197125077f5ebabf",
+    "semantic_hash": "c810741608c99b90197125077f5ebabf"
+  },
+  "api/translate.js": {
+    "mtime": 1787739296.794322,
+    "ast_hash": "1fbb16629ccd64d40c89d994e7eed203",
+    "semantic_hash": "1fbb16629ccd64d40c89d994e7eed203"
+  },
+  "lib/toolDispatcher.js": {
+    "mtime": 1787737277.0,
+    "ast_hash": "67b937aa8d6dfc18dcf9cbd7a3bbbef0",
+    "semantic_hash": "67b937aa8d6dfc18dcf9cbd7a3bbbef0"
+  },
+  "lib/toolSchemas.js": {
+    "mtime": 1787737272.0,
+    "ast_hash": "e64a8e26790c3184455ae1d39d52bab6",
+    "semantic_hash": "e64a8e26790c3184455ae1d39d52bab6"
+  },
+  "lib/tools/biKurs.js": {
+    "mtime": 1787737262.0,
+    "ast_hash": "e4a4f642ba1c4196739b0c0fa0834cee",
+    "semantic_hash": "e4a4f642ba1c4196739b0c0fa0834cee"
+  },
+  "lib/tools/bmkgEarthquake.js": {
+    "mtime": 1787737230.0,
+    "ast_hash": "40c076f6729b2724fa34a973ba62888c",
+    "semantic_hash": "40c076f6729b2724fa34a973ba62888c"
+  },
+  "lib/tools/bmkgWeather.js": {
+    "mtime": 1787737227.0,
+    "ast_hash": "b1fbdc09b55e76c519b5c662681df7d6",
+    "semantic_hash": "b1fbdc09b55e76c519b5c662681df7d6"
+  },
+  "lib/tools/bpsStatistik.js": {
+    "mtime": 1787737238.0,
+    "ast_hash": "42c95cb88d8c4e8aa365922b20322945",
+    "semantic_hash": "42c95cb88d8c4e8aa365922b20322945"
+  },
+  "lib/tools/wilayah.js": {
+    "mtime": 1787737221.0,
+    "ast_hash": "dee16d92a9f483664e165f2bfe7374b0",
+    "semantic_hash": "dee16d92a9f483664e165f2bfe7374b0"
+  },
+  "package.json": {
+    "mtime": 1787741004.7318068,
+    "ast_hash": "5abe529ca5dea92c3033a15946c25865",
+    "semantic_hash": "5abe529ca5dea92c3033a15946c25865"
+  },
+  "postcss.config.js": {
+    "mtime": 1787737050.0,
+    "ast_hash": "ef3ba2a81ba19f8ea5ddf625521e96f0",
+    "semantic_hash": "ef3ba2a81ba19f8ea5ddf625521e96f0"
+  },
+  "src/App.jsx": {
+    "mtime": 1787737093.0,
+    "ast_hash": "36edbad4b930fb08f4952fde47c0a718",
+    "semantic_hash": "36edbad4b930fb08f4952fde47c0a718"
+  },
+  "src/components/CategoryCard.jsx": {
+    "mtime": 1787739157.376642,
+    "ast_hash": "cb173b758dac111cf94d28bb3b88c6cf",
+    "semantic_hash": "cb173b758dac111cf94d28bb3b88c6cf"
+  },
+  "src/components/ChatBubble.jsx": {
+    "mtime": 1787739197.9136958,
+    "ast_hash": "6585ec10d5fb579e548ce5f81e84c529",
+    "semantic_hash": "6585ec10d5fb579e548ce5f81e84c529"
+  },
+  "src/components/ChatInput.jsx": {
+    "mtime": 1787739187.5255399,
+    "ast_hash": "72f2e78a2c17ee76d5fcffb2fcdb5d30",
+    "semantic_hash": "72f2e78a2c17ee76d5fcffb2fcdb5d30"
+  },
+  "src/components/Icon.jsx": {
+    "mtime": 1787739121.0227883,
+    "ast_hash": "8875667afb6d2c04173b18c1dbf0f2db",
+    "semantic_hash": "8875667afb6d2c04173b18c1dbf0f2db"
+  },
+  "src/components/SuggestionChip.jsx": {
+    "mtime": 1787739179.1635132,
+    "ast_hash": "5523c0182a777674f9581afb9b1a5478",
+    "semantic_hash": "5523c0182a777674f9581afb9b1a5478"
+  },
+  "src/components/cards/EarthquakeCard.jsx": {
+    "mtime": 1787739223.1747243,
+    "ast_hash": "391a3138e539b66bd48b74351ecf5419",
+    "semantic_hash": "391a3138e539b66bd48b74351ecf5419"
+  },
+  "src/components/cards/KursCard.jsx": {
+    "mtime": 1787739231.4530814,
+    "ast_hash": "5442297e9325159b2220c9e6bed70425",
+    "semantic_hash": "5442297e9325159b2220c9e6bed70425"
+  },
+  "src/components/cards/StatistikCard.jsx": {
+    "mtime": 1787739240.2025495,
+    "ast_hash": "fd87453434e631c3d8f986bb1f4dee5f",
+    "semantic_hash": "fd87453434e631c3d8f986bb1f4dee5f"
+  },
+  "src/components/cards/WeatherCard.jsx": {
+    "mtime": 1787739213.175901,
+    "ast_hash": "490661681e8454503124d054135a9536",
+    "semantic_hash": "490661681e8454503124d054135a9536"
+  },
+  "src/components/cards/WilayahCard.jsx": {
+    "mtime": 1787739248.0058177,
+    "ast_hash": "027ba9bae60cc0183b07c0a9b040f7f0",
+    "semantic_hash": "027ba9bae60cc0183b07c0a9b040f7f0"
+  },
+  "src/components/docs/CodeBlock.jsx": {
+    "mtime": 1787739386.1333013,
+    "ast_hash": "fdd252b8fe3a3816ca809708a36f9620",
+    "semantic_hash": "fdd252b8fe3a3816ca809708a36f9620"
+  },
+  "src/components/docs/DocsSidebar.jsx": {
+    "mtime": 1787739366.7480416,
+    "ast_hash": "9a5e4b8b9b38607b29f23b27b27bf0fb",
+    "semantic_hash": "9a5e4b8b9b38607b29f23b27b27bf0fb"
+  },
+  "src/components/docs/ParamTable.jsx": {
+    "mtime": 1787739376.206345,
+    "ast_hash": "67cc1d2b90f09846394d3d10a0ce8e1e",
+    "semantic_hash": "67cc1d2b90f09846394d3d10a0ce8e1e"
+  },
+  "src/data/docsContent.js": {
+    "mtime": 1787741095.6202524,
+    "ast_hash": "ef88517d3067afd44f02d89b5bb17752",
+    "semantic_hash": "ef88517d3067afd44f02d89b5bb17752"
+  },
+  "src/i18n/LanguageContext.jsx": {
+    "mtime": 1787737078.0,
+    "ast_hash": "28f175ec4dc40036cf1698e22cac8d23",
+    "semantic_hash": "28f175ec4dc40036cf1698e22cac8d23"
+  },
+  "src/i18n/translations.js": {
+    "mtime": 1787739449.6976535,
+    "ast_hash": "7c32e9c861a5b8bc3401f9a3aaa55a03",
+    "semantic_hash": "7c32e9c861a5b8bc3401f9a3aaa55a03"
+  },
+  "src/i18n/useAutoTranslate.js": {
+    "mtime": 1787739339.8769646,
+    "ast_hash": "2ace1b944531bd8b7eb0d1810ead8eb9",
+    "semantic_hash": "2ace1b944531bd8b7eb0d1810ead8eb9"
+  },
+  "src/layout/Footer.jsx": {
+    "mtime": 1787739145.1713994,
+    "ast_hash": "44a3cd3b744df3b9221c7ef93e514142",
+    "semantic_hash": "44a3cd3b744df3b9221c7ef93e514142"
+  },
+  "src/layout/Header.jsx": {
+    "mtime": 1787739133.814013,
+    "ast_hash": "709d8fe8e80de50ffa9af0e0dc77e220",
+    "semantic_hash": "709d8fe8e80de50ffa9af0e0dc77e220"
+  },
+  "src/layout/Layout.jsx": {
+    "mtime": 1787739149.062206,
+    "ast_hash": "97c03ea8195e3ac44d6f35d84c292aed",
+    "semantic_hash": "97c03ea8195e3ac44d6f35d84c292aed"
+  },
+  "src/main.jsx": {
+    "mtime": 1787737062.0,
+    "ast_hash": "e2df96cf032d11f255bbc3524ce5bfc4",
+    "semantic_hash": "e2df96cf032d11f255bbc3524ce5bfc4"
+  },
+  "src/pages/Beranda.jsx": {
+    "mtime": 1787739169.4771202,
+    "ast_hash": "2b10bad2f1d090a91f1d9a3971819fbf",
+    "semantic_hash": "2b10bad2f1d090a91f1d9a3971819fbf"
+  },
+  "src/pages/Chat.jsx": {
+    "mtime": 1787739265.9040284,
+    "ast_hash": "aa2c057fe11da9fd23f58786b2f7913a",
+    "semantic_hash": "aa2c057fe11da9fd23f58786b2f7913a"
+  },
+  "src/pages/Dokumentasi.jsx": {
+    "mtime": 1787739409.7469134,
+    "ast_hash": "1121fc415f26d242e75e4c1bdde7ec96",
+    "semantic_hash": "1121fc415f26d242e75e4c1bdde7ec96"
+  },
+  "tailwind.config.js": {
+    "mtime": 1787739100.7976367,
+    "ast_hash": "6aa22e35421ed112ed23e0096848d527",
+    "semantic_hash": "6aa22e35421ed112ed23e0096848d527"
+  },
+  "vite.config.js": {
+    "mtime": 1787737045.0,
+    "ast_hash": "fc4ad8a6b18506bbd8e28aa6559accf8",
+    "semantic_hash": "fc4ad8a6b18506bbd8e28aa6559accf8"
+  },
+  "README.md": {
+    "mtime": 1787741105.3078518,
+    "ast_hash": "277000e877975aae116d4d532fa743c2",
+    "semantic_hash": "277000e877975aae116d4d532fa743c2"
+  },
+  "index.html": {
+    "mtime": 1787739106.5903456,
+    "ast_hash": "ebb10abc9552e82eeb15b3a11cd9b9c6",
+    "semantic_hash": "ebb10abc9552e82eeb15b3a11cd9b9c6"
+  },
+  "stitch/beranda_data_nusantara_assistant/code.html": {
+    "mtime": 1787711532.0,
+    "ast_hash": "b01584c08d0036867074e6fb08d8cb01",
+    "semantic_hash": "b01584c08d0036867074e6fb08d8cb01"
+  },
+  "stitch/beranda_data_nusantara_assistant_mobile/code.html": {
+    "mtime": 1787711532.0,
+    "ast_hash": "5659e718c5c7d97a2873936b6b2197f4",
+    "semantic_hash": "5659e718c5c7d97a2873936b6b2197f4"
+  },
+  "stitch/chat_data_nusantara_assistant/code.html": {
+    "mtime": 1787711532.0,
+    "ast_hash": "30152b64bbfbf83decc4349d521e0c7e",
+    "semantic_hash": "30152b64bbfbf83decc4349d521e0c7e"
+  },
+  "stitch/chat_data_nusantara_assistant_mobile/code.html": {
+    "mtime": 1787711532.0,
+    "ast_hash": "28a44463b324bd6e3d78eb4693787210",
+    "semantic_hash": "28a44463b324bd6e3d78eb4693787210"
+  },
+  "stitch/dokumentasi_data_nusantara_assistant/code.html": {
+    "mtime": 1787711532.0,
+    "ast_hash": "a1e5216c7bb3a960185d12fbdd75cb69",
+    "semantic_hash": "a1e5216c7bb3a960185d12fbdd75cb69"
+  },
+  "stitch/dokumentasi_data_nusantara_assistant_mobile/code.html": {
+    "mtime": 1787711532.0,
+    "ast_hash": "d0fa4e7f3dce5bbcd837bb6ee7aa0465",
+    "semantic_hash": "d0fa4e7f3dce5bbcd837bb6ee7aa0465"
+  },
+  "stitch/nusantara_bright/DESIGN.md": {
+    "mtime": 1787711532.0,
+    "ast_hash": "d93979a0e8c6c1538dfa16e2b5b4d25f",
+    "semantic_hash": "d93979a0e8c6c1538dfa16e2b5b4d25f"
+  },
+  "stitch/beranda_data_nusantara_assistant/screen.png": {
+    "mtime": 1787711532.0,
+    "ast_hash": "7187f05ff66c09e3c2fcd81cdf402779",
+    "semantic_hash": "7187f05ff66c09e3c2fcd81cdf402779"
+  },
+  "stitch/beranda_data_nusantara_assistant_mobile/screen.png": {
+    "mtime": 1787711532.0,
+    "ast_hash": "1808a2b6fe9b6447e1e0bb265da0a599",
+    "semantic_hash": "1808a2b6fe9b6447e1e0bb265da0a599"
+  },
+  "stitch/chat_data_nusantara_assistant/screen.png": {
+    "mtime": 1787711532.0,
+    "ast_hash": "bf95a3802f47a6f3f4863f9ee8bd69b6",
+    "semantic_hash": "bf95a3802f47a6f3f4863f9ee8bd69b6"
+  },
+  "stitch/chat_data_nusantara_assistant_mobile/screen.png": {
+    "mtime": 1787711532.0,
+    "ast_hash": "e50adf97a9b6348aeeda675df68efeae",
+    "semantic_hash": "e50adf97a9b6348aeeda675df68efeae"
+  },
+  "stitch/dokumentasi_data_nusantara_assistant/screen.png": {
+    "mtime": 1787711532.0,
+    "ast_hash": "314cfe48bec512e2d2867d1d97e0c612",
+    "semantic_hash": "314cfe48bec512e2d2867d1d97e0c612"
+  },
+  "stitch/dokumentasi_data_nusantara_assistant_mobile/screen.png": {
+    "mtime": 1787711532.0,
+    "ast_hash": "c916b837ab25d5f7bd1e38ae79ef1ac4",
+    "semantic_hash": "c916b837ab25d5f7bd1e38ae79ef1ac4"
+  }
+}

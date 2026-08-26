@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Data Nusantara Assistant - Documentation (Mobile)</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#ffb68b",
+                      "on-secondary": "#ffffff",
+                      "tertiary": "#994700",
+                      "on-surface": "#1a1c1e",
+                      "surface-container-low": "#f3f3f6",
+                      "background": "#f9f9fc",
+                      "on-background": "#1a1c1e",
+                      "surface-tint": "#00658d",
+                      "error-container": "#ffdad6",
+                      "secondary-container": "#feb700",
+                      "on-error-container": "#93000a",
+                      "on-secondary-fixed-variant": "#5e4200",
+                      "surface-container": "#eeeef0",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-dim": "#dadadc",
+                      "error": "#ba1a1a",
+                      "on-primary-fixed": "#001e2d",
+                      "primary": "#00658d",
+                      "surface": "#f9f9fc",
+                      "surface-bright": "#f9f9fc",
+                      "on-surface-variant": "#3d4850",
+                      "on-error": "#ffffff",
+                      "surface-container-high": "#e8e8ea",
+                      "on-tertiary": "#ffffff",
+                      "inverse-on-surface": "#f0f0f3",
+                      "secondary-fixed-dim": "#ffba20",
+                      "on-tertiary-container": "#6d3000",
+                      "on-primary": "#ffffff",
+                      "on-secondary-container": "#6b4b00",
+                      "on-tertiary-fixed-variant": "#753400",
+                      "secondary-fixed": "#ffdea8",
+                      "on-secondary-fixed": "#271900",
+                      "outline": "#6d7881",
+                      "tertiary-container": "#ff9249",
+                      "primary-fixed-dim": "#81cfff",
+                      "inverse-primary": "#81cfff",
+                      "primary-container": "#00baff",
+                      "on-tertiary-fixed": "#321200",
+                      "tertiary-fixed": "#ffdbc8",
+                      "surface-container-highest": "#e2e2e5",
+                      "on-primary-container": "#004764",
+                      "on-primary-fixed-variant": "#004c6b",
+                      "primary-fixed": "#c6e7ff",
+                      "surface-variant": "#e2e2e5",
+                      "inverse-surface": "#2f3133",
+                      "outline-variant": "#bdc8d2",
+                      "secondary": "#7c5800"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "lg": "48px",
+                      "gutter": "24px",
+                      "container-max": "1200px",
+                      "md": "24px",
+                      "base": "8px",
+                      "sm": "12px",
+                      "xl": "80px",
+                      "xs": "4px"
+              },
+              "fontFamily": {
+                      "label-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-xl": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-sm": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm dark:shadow-none docked full-width top-0 sticky flex justify-between items-center w-full px-base md:px-md max-w-container-max mx-auto h-16 z-50 transition-all duration-200">
+<div class="flex items-center gap-sm">
+<button class="p-xs text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-all duration-200 md:hidden" id="menuToggle">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-container">
+                Data Nusantara Assistant
+            </div>
+</div>
+<div class="flex items-center gap-md">
+<nav class="hidden md:flex gap-sm">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-all duration-200 px-sm py-xs" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:opacity-80 transition-all duration-200 px-sm py-xs" href="#">Chat</a>
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 transition-all duration-200 px-sm py-xs" href="#">Docs</a>
+</nav>
+<div class="flex items-center bg-surface-container-high rounded-full p-xs">
+<button class="px-sm py-xs text-label-sm font-label-sm rounded-full bg-primary text-on-primary">ID</button>
+<button class="px-sm py-xs text-label-sm font-label-sm text-on-surface-variant">EN</button>
+</div>
+</div>
+</header>
+<!-- Mobile Navigation Drawer Overlay (Hidden by default) -->
+<div class="fixed inset-0 z-40 bg-on-background/20 hidden transition-opacity" id="mobileDrawer">
+<div class="bg-surface w-[280px] h-full absolute left-0 top-0 shadow-lg flex flex-col p-md">
+<div class="flex justify-between items-center mb-md">
+<h2 class="font-headline-md text-headline-md font-bold text-primary">Documentation</h2>
+<button class="text-on-surface-variant" id="closeMenu">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="text-label-md font-label-md text-on-surface-variant mb-md">API &amp; Integration Guide</p>
+<nav class="flex flex-col gap-xs font-label-md text-label-md overflow-y-auto">
+<a class="flex items-center gap-sm p-sm bg-primary-container/20 text-on-primary-container font-bold rounded-lg transition-transform duration-150 scale-[0.98]" href="#">
+<span class="material-symbols-outlined">info</span> Intro
+                </a>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">cloudy_snowing</span> Weather Tools
+                </a>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">payments</span> BI Tools
+                </a>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">map</span> Region Tools
+                </a>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">query_stats</span> BPS Tools
+                </a>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">rocket_launch</span> Deploy
+                </a>
+<div class="mt-lg border-t border-outline-variant pt-md">
+<p class="text-label-sm font-label-sm text-outline mb-sm uppercase tracking-wider">Main Menu</p>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg" href="#">Home</a>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-lg" href="#">Chat</a>
+</div>
+</nav>
+</div>
+</div>
+<!-- Main Content Area -->
+<main class="flex-grow flex flex-col md:flex-row max-w-container-max mx-auto w-full relative">
+<!-- Desktop Sidebar (Hidden on mobile) -->
+<aside class="bg-surface dark:bg-surface-container-low h-full w-64 hidden md:flex flex-col border-r border-outline-variant dark:border-outline flat no shadows sticky top-16 h-[calc(100vh-64px)] p-sm overflow-y-auto">
+<div class="mb-md p-sm">
+<h2 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-container">Documentation</h2>
+<p class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant">API &amp; Integration Guide</p>
+</div>
+<nav class="flex flex-col gap-xs font-label-md text-label-md">
+<a class="flex items-center gap-sm p-sm bg-primary-container/20 text-on-primary-container dark:bg-primary-fixed-dim dark:text-on-primary-fixed font-bold rounded-lg transition-transform duration-150 scale-[0.98]" href="#">
+<span class="material-symbols-outlined">info</span> Intro
+                </a>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">cloudy_snowing</span> Weather Tools
+                </a>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">payments</span> BI Tools
+                </a>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">map</span> Region Tools
+                </a>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">query_stats</span> BPS Tools
+                </a>
+<a class="flex items-center gap-sm p-sm text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">rocket_launch</span> Deploy
+                </a>
+</nav>
+</aside>
+<!-- Documentation Content Canvas -->
+<article class="flex-grow p-4 md:p-lg lg:p-xl w-full max-w-full overflow-hidden">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-xs text-label-sm font-label-sm text-on-surface-variant mb-md">
+<a class="hover:text-primary transition-colors" href="#">Docs</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-on-background font-medium">Intro</span>
+</nav>
+<div class="max-w-3xl space-y-lg">
+<!-- Header Section -->
+<section class="space-y-sm">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-on-background">Pengenalan dan Instalasi</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Panduan memulai cepat untuk mengintegrasikan Data Nusantara Assistant ke dalam proyek Anda.</p>
+</section>
+<!-- Quick Start Section -->
+<section class="space-y-md bg-surface-container-lowest p-md rounded-xl border border-outline-variant shadow-[0px_4px_20px_rgba(0,0,0,0.04)]">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">rocket_launch</span>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-background">Mulai Cepat</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Instal paket inti menggunakan manajer paket pilihan Anda:</p>
+<div class="bg-inverse-surface text-inverse-on-surface rounded-lg p-sm overflow-x-auto relative group">
+<button class="absolute top-sm right-sm text-outline-variant hover:text-white transition-colors" title="Copy to clipboard">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+</button>
+<pre class="font-mono text-sm whitespace-pre"><code>npm install @data-nusantara/core
+# atau
+yarn add @data-nusantara/core</code></pre>
+</div>
+</section>
+<!-- API Endpoints Overview -->
+<section class="space-y-md">
+<h2 class="font-headline-md text-headline-md font-semibold text-on-background border-b border-outline-variant pb-xs">Tinjauan API Endpoint</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+<!-- Card 1: Cuaca BMKG -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:border-primary transition-colors relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-16 h-16 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors"></div>
+<div class="flex justify-between items-start">
+<div class="bg-primary/10 p-sm rounded-lg text-primary">
+<span class="material-symbols-outlined">cloudy_snowing</span>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Public</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-on-background">Cuaca BMKG</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-xs">Akses data prakiraan cuaca, peringatan dini, dan gempa bumi terkini.</p>
+</div>
+<div class="mt-auto pt-sm flex items-center gap-xs text-primary font-label-sm text-label-sm cursor-pointer hover:underline">
+                                Lihat detail <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2: Statistik BPS -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm shadow-[0px_4px_20px_rgba(0,0,0,0.04)] hover:border-secondary-container transition-colors relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-16 h-16 bg-secondary-container/10 rounded-bl-full -z-10 group-hover:bg-secondary-container/20 transition-colors"></div>
+<div class="flex justify-between items-start">
+<div class="bg-secondary-container/20 p-sm rounded-lg text-on-secondary-container">
+<span class="material-symbols-outlined">query_stats</span>
+</div>
+<span class="bg-error-container text-on-error-container px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">key</span> Key Req
+                                </span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-on-background">Statistik BPS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-xs">Data kependudukan, inflasi, dan indikator ekonomi makro Indonesia.</p>
+</div>
+<div class="mt-auto pt-sm flex items-center gap-xs text-secondary font-label-sm text-label-sm cursor-pointer hover:underline">
+                                Lihat detail <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Parameters Table (Card-based for mobile) -->
+<section class="space-y-md">
+<h2 class="font-headline-md text-headline-md font-semibold text-on-background border-b border-outline-variant pb-xs">Parameter Global</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Parameter ini dapat digunakan di sebagian besar endpoint.</p>
+<div class="space-y-sm">
+<!-- Param 1 -->
+<div class="bg-surface-container border border-outline-variant rounded-lg p-sm">
+<div class="flex items-center gap-sm mb-xs">
+<code class="bg-surface-dim px-2 py-1 rounded text-primary font-mono text-sm">region_id</code>
+<span class="text-[10px] text-outline border border-outline px-1 rounded uppercase">String</span>
+<span class="text-[10px] text-error border border-error px-1 rounded uppercase">Required*</span>
+</div>
+<p class="font-body-md text-body-md text-sm text-on-surface-variant">Kode unik wilayah (Provinsi/Kabupaten/Kota) sesuai standar Kemendagri.</p>
+</div>
+<!-- Param 2 -->
+<div class="bg-surface-container border border-outline-variant rounded-lg p-sm">
+<div class="flex items-center gap-sm mb-xs">
+<code class="bg-surface-dim px-2 py-1 rounded text-primary font-mono text-sm">limit</code>
+<span class="text-[10px] text-outline border border-outline px-1 rounded uppercase">Integer</span>
+<span class="text-[10px] text-outline-variant border border-outline-variant px-1 rounded uppercase">Optional</span>
+</div>
+<p class="font-body-md text-body-md text-sm text-on-surface-variant">Jumlah data maksimal yang dikembalikan. Default: 10, Max: 100.</p>
+</div>
+</div>
+</section>
+</div>
+</article>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-highest w-full py-md flat no shadows w-full border-t border-outline-variant dark:border-outline mt-auto transition-opacity duration-200">
+<div class="max-w-container-max mx-auto px-base md:px-md flex flex-col md:flex-row justify-between items-center gap-md">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-container">
+                Data Nusantara Assistant
+            </div>
+<nav class="flex flex-wrap justify-center gap-md font-label-sm text-label-sm">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="#">GitHub</a>
+<a class="text-primary dark:text-primary-fixed font-bold hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="#">Documentation</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors" href="#">Terms</a>
+</nav>
+<div class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline-variant">
+                © 2024 Data Nusantara Assistant
+            </div>
+</div>
+</footer>
+<script>
+        // Simple mobile menu toggle logic
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+
+        function toggleMenu() {
+            if (mobileDrawer.classList.contains('hidden')) {
+                mobileDrawer.classList.remove('hidden');
+                // brief timeout to allow display:block to apply before animating opacity
+                setTimeout(() => mobileDrawer.classList.add('opacity-100'), 10);
+            } else {
+                mobileDrawer.classList.remove('opacity-100');
+                setTimeout(() => mobileDrawer.classList.add('hidden'), 300); // match transition duration
+            }
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        closeMenu.addEventListener('click', toggleMenu);
+        
+        // Close when clicking outside drawer
+        mobileDrawer.addEventListener('click', (e) => {
+            if(e.target === mobileDrawer) {
+                toggleMenu();
+            }
+        });
+    </script>
+</body></html>

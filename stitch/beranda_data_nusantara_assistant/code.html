@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beranda - Data Nusantara Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#6d3000",
+                      "secondary-container": "#feb700",
+                      "primary-fixed": "#c6e7ff",
+                      "on-secondary-fixed": "#271900",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container": "#eeeef0",
+                      "surface": "#f9f9fc",
+                      "on-secondary-container": "#6b4b00",
+                      "secondary": "#7c5800",
+                      "tertiary-container": "#ff9249",
+                      "on-background": "#1a1c1e",
+                      "primary-container": "#00baff",
+                      "inverse-primary": "#81cfff",
+                      "primary": "#00658d",
+                      "surface-container-low": "#f3f3f6",
+                      "tertiary-fixed": "#ffdbc8",
+                      "on-tertiary-fixed-variant": "#753400",
+                      "on-primary-container": "#004764",
+                      "on-error": "#ffffff",
+                      "on-surface-variant": "#3d4850",
+                      "outline-variant": "#bdc8d2",
+                      "outline": "#6d7881",
+                      "on-tertiary-fixed": "#321200",
+                      "secondary-fixed-dim": "#ffba20",
+                      "primary-fixed-dim": "#81cfff",
+                      "surface-container-high": "#e8e8ea",
+                      "surface-container-highest": "#e2e2e5",
+                      "inverse-on-surface": "#f0f0f3",
+                      "surface-dim": "#dadadc",
+                      "on-surface": "#1a1c1e",
+                      "tertiary-fixed-dim": "#ffb68b",
+                      "on-primary-fixed": "#001e2d",
+                      "on-secondary-fixed-variant": "#5e4200",
+                      "on-primary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "error": "#ba1a1a",
+                      "secondary-fixed": "#ffdea8",
+                      "tertiary": "#994700",
+                      "inverse-surface": "#2f3133",
+                      "on-secondary": "#ffffff",
+                      "background": "#f9f9fc",
+                      "on-primary-fixed-variant": "#004c6b",
+                      "on-tertiary": "#ffffff",
+                      "surface-bright": "#f9f9fc",
+                      "on-error-container": "#93000a",
+                      "surface-tint": "#00658d",
+                      "surface-variant": "#e2e2e5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "sm": "12px",
+                      "md": "24px",
+                      "lg": "48px",
+                      "xl": "80px",
+                      "gutter": "24px",
+                      "container-max": "1200px",
+                      "xs": "4px"
+              },
+              "fontFamily": {
+                      "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                      "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+                      "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                      "label-md": ["Plus Jakarta Sans", "sans-serif"],
+                      "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+                      "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+                      "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+                      "headline-lg": ["Plus Jakarta Sans", "sans-serif"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            }
+          }
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-surface/80 backdrop-blur-md shadow-sm docked full-width top-0 sticky flex justify-between items-center w-full px-base md:px-md max-w-container-max mx-auto h-16 z-50 transition-all duration-200">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+            Data Nusantara Assistant
+        </div>
+<nav class="hidden md:flex gap-md">
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary hover:opacity-80 transition-all duration-200 font-label-md text-label-md" href="#">Chat</a>
+<a class="text-on-surface-variant hover:text-primary hover:opacity-80 transition-all duration-200 font-label-md text-label-md" href="#">Docs</a>
+</nav>
+<div class="flex items-center">
+<span class="font-label-md text-label-md text-on-surface-variant cursor-pointer hover:text-primary transition-all duration-200">ID/EN</span>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center w-full px-base md:px-md max-w-container-max mx-auto py-lg">
+<!-- Hero Section -->
+<section class="w-full text-center py-xl flex flex-col items-center">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-sm">Navigasi Data Indonesia dengan Mudah</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl">
+                Asisten AI cerdas Anda untuk mengakses, memahami, dan menganalisis data publik Indonesia dari BMKG, BPS, dan Bank Indonesia.
+            </p>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md py-sm px-lg rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-200 flex items-center gap-xs">
+                Mulai Chat
+                <span class="material-symbols-outlined filled">chat</span>
+</button>
+</section>
+<!-- Category Grid -->
+<section class="w-full py-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-200 flex flex-col items-start">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">cloud</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-xs">Cuaca dan Gempa</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Informasi cuaca terkini dan peringatan gempa dari BMKG.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-200 flex flex-col items-start">
+<div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center mb-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">payments</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-xs">Kurs Bank Indonesia</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Data nilai tukar mata uang asing terbaru dari Bank Indonesia.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-200 flex flex-col items-start">
+<div class="w-12 h-12 bg-primary-container/20 rounded-lg flex items-center justify-center mb-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">map</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-xs">Wilayah Administratif</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Data provinsi, kota/kabupaten, dan kode pos di seluruh Indonesia.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-md rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-200 flex flex-col items-start">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center mb-sm">
+<span class="material-symbols-outlined text-tertiary text-[24px]">bar_chart</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-xs">Statistik BPS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Indikator ekonomi, kependudukan, dan data statistik BPS lainnya.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container w-full py-md border-t border-outline-variant mt-auto">
+<div class="max-w-container-max mx-auto px-base md:px-md flex flex-col md:flex-row justify-between items-center">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-sm md:mb-0">
+                Data Nusantara Assistant
+            </div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-sm md:mb-0">
+                © 2024 Data Nusantara Assistant
+            </div>
+<div class="flex gap-md font-label-sm text-label-sm text-on-surface-variant">
+<a class="hover:text-primary underline transition-opacity duration-200" href="#">GitHub</a>
+<a class="hover:text-primary underline transition-opacity duration-200" href="#">Documentation</a>
+<a class="hover:text-primary underline transition-opacity duration-200" href="#">Privacy Policy</a>
+<a class="hover:text-primary underline transition-opacity duration-200" href="#">Terms</a>
+</div>
+</div>
+</footer>
+</body></html>
