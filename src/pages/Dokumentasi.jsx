@@ -6,6 +6,7 @@ import { docsSections } from '../data/docsContent.js'
 import DocsSidebar from '../components/docs/DocsSidebar.jsx'
 import CodeBlock from '../components/docs/CodeBlock.jsx'
 import ParamTable from '../components/docs/ParamTable.jsx'
+import ApiPlayground from '../components/docs/ApiPlayground.jsx'
 import Icon from '../components/Icon.jsx'
 
 export default function Dokumentasi() {
@@ -155,6 +156,16 @@ export default function Dokumentasi() {
                 <span>{t('docs_response_heading')}</span>
               </h2>
               <CodeBlock code={active.response} label="Response JSON" />
+            </section>
+          )}
+
+          {active.toolNames && (
+            <section className="mt-10">
+              <h2 className="mb-3 flex items-center gap-2 border-b border-outline-variant/40 pb-2 text-lg font-bold text-primary">
+                <Icon name="science" className="text-lg" />
+                <span>Try It Live</span>
+              </h2>
+              <ApiPlayground key={active.id} toolNames={active.toolNames} params={params ?? []} />
             </section>
           )}
         </main>
