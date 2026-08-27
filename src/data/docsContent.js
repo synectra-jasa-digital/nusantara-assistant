@@ -115,7 +115,7 @@ npm run dev`,
     toolNames: ['get_exchange_rate'],
     body: [
       'Mengambil kurs referensi terbaru dari layanan wsKursBI Bank Indonesia. Layanan aslinya SOAP/XML, fungsi ini membungkusnya jadi JSON biasa.',
-      'Catatan: field nama mata uang dan nilai pada respons SOAP mentah belum didokumentasikan lengkap oleh BI. Sesuaikan parser di lib/tools/biKurs.js dengan struktur XML asli setelah tes langsung.',
+      'Catatan: dari IP datacenter (termasuk Vercel), endpoint SOAP BI ini kadang membalas halaman WAF block (bukan XML) - lihat README bagian Catatan & Keterbatasan. Kalau itu terjadi tool ini gagal bukan karena bug, tapi diblokir di level jaringan.',
     ],
     params: [
       { name: 'currency_code', type: 'string', desc: 'Kode mata uang 3 huruf, contoh USD, JPY, SGD' },

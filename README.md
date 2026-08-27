@@ -133,16 +133,18 @@ Naikkan versi di `mcp-server/package.json` sebelum publish ulang.
 ## Catatan & Keterbatasan
 
 **Situs pemerintah Indonesia kadang memblokir IP datacenter.** Beberapa
-API di proyek ini (terutama BPS, kemungkinan juga BMKG dan BI) diketahui
-memblokir permintaan dari IP milik penyedia cloud besar seperti AWS/GCP,
-yang mana Vercel serverless function berjalan di atasnya. Ini bukan
-asumsi, sudah terverifikasi langsung: saat proyek ini disusun, panggilan
-ke `data.bmkg.go.id/DataMKG/TEWS/autogempa.json` dari sandbox cloud (IP
-datacenter) mengembalikan `403 Forbidden`, padahal endpoint dan
-formatnya sudah benar sesuai dokumentasi resmi. Ini bisa membuat kode yang
-jalan mulus di komputer lokal kamu (IP rumah/kampus) tiba-tiba gagal fetch
-setelah di-deploy ke Vercel. (Data wilayah administratif sudah tidak
-kena isu ini lagi sejak dipindah ke CSV lokal.)
+API di proyek ini (BPS, BMKG, dan Bank Indonesia) diketahui memblokir
+permintaan dari IP milik penyedia cloud besar seperti AWS/GCP, yang mana
+Vercel serverless function berjalan di atasnya. Ini bukan asumsi, sudah
+terverifikasi langsung dari sandbox cloud (IP datacenter): panggilan ke
+`data.bmkg.go.id/DataMKG/TEWS/autogempa.json` mengembalikan `403
+Forbidden`, dan endpoint SOAP BI (`wskursbi.asmx`) mengembalikan HTML
+halaman WAF block ("URL yang Anda minta ditolak") dengan status 200 -
+bukan XML SOAP sama sekali - padahal endpoint dan formatnya sudah benar
+sesuai dokumentasi resmi masing-masing. Ini bisa membuat kode yang jalan
+mulus di komputer lokal kamu (IP rumah/kampus) tiba-tiba gagal fetch
+setelah di-deploy ke Vercel. (Data wilayah administratif sudah tidak kena
+isu ini lagi sejak dipindah ke CSV lokal.)
 
 Cara mengeceknya: buka Vercel dashboard → Deployments → pilih deployment →
 Functions → lihat log `api/chat`. Kalau errornya berbentuk timeout atau
@@ -154,11 +156,14 @@ Kalau itu terjadi, beberapa opsi mitigasi:
 - Untuk demo penting (wawancara kerja, presentasi), tes dulu H-1 supaya ada waktu pindah ke opsi proxy kalau ternyata diblokir.
 
 **Field respons SOAP Bank Indonesia (`lib/tools/biKurs.js`) belum
-terverifikasi 100 persen.** BI tidak mempublikasikan nama field yang
-tepat di dalam data gempa mereka gunakan format XML DataSet lama (diffgram),
-jadi parser di file ini mencoba beberapa kemungkinan nama field umum.
-Jalankan satu request nyata, log responsnya, dan sesuaikan
-`FIELD_ALIASES` di file itu kalau hasilnya kosong atau salah.
+terverifikasi 100 persen di luar isu WAF di atas.** BI tidak
+mempublikasikan nama field yang tepat di dalam data kurs mereka
+(format XML DataSet lama/diffgram), jadi parser di file ini mencoba
+beberapa kemungkinan nama field umum lewat `FIELD_ALIASES`. Kalau
+error-nya secara eksplisit menyebut "bukan format SOAP yang
+diharapkan", itu tanda WAF block di atas, bukan field yang salah -
+kalau errornya "tidak ditemukan pada respons terbaru" padahal format
+SOAP-nya valid, baru itu waktunya cek & sesuaikan `FIELD_ALIASES`.
 
 **Belum ada database, dan memang sengaja begitu.** Riwayat chat cukup
 hidup di state React browser. Kalau nanti mau tambah fitur akun atau
