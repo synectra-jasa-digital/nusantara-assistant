@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="og-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#001E2D" />
+      <stop offset="100%" stop-color="#00354A" />
+    </linearGradient>
+
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00658D" />
+      <stop offset="100%" stop-color="#00BAFF" />
+    </linearGradient>
+
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00BAFF" />
+      <stop offset="100%" stop-color="#FEB700" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="24" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#og-bg)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="150" r="300" fill="#00658D" opacity="0.25" filter="url(#glow)" />
+  <circle cx="1000" cy="480" r="280" fill="#00BAFF" opacity="0.2" filter="url(#glow)" />
+
+  <!-- Grid Decoration Lines -->
+  <g opacity="0.05" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="360" x2="1200" y2="360" />
+    <line x1="0" y1="480" x2="1200" y2="480" />
+    <line x1="240" y1="0" x2="240" y2="630" />
+    <line x1="480" y1="0" x2="480" y2="630" />
+    <line x1="720" y1="0" x2="720" y2="630" />
+    <line x1="960" y1="0" x2="960" y2="630" />
+  </g>
+
+  <!-- Content Container -->
+  <g transform="translate(100, 140)">
+    <!-- Logo Badge -->
+    <rect x="0" y="0" width="100" height="100" rx="28" fill="url(#badge-grad)" />
+    
+    <!-- Logo Icon Inside Badge -->
+    <path d="M 50 20 A 30 30 0 0 1 80 50" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" />
+    <path d="M 80 50 A 30 30 0 0 1 50 80" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity="0.8" />
+    <path d="M 50 80 A 30 30 0 0 1 23 57" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity="0.5" />
+    <circle cx="50" cy="50" r="10" fill="#FEB700" />
+    
+    <!-- Brand Title -->
+    <text x="130" y="58" font-family="Plus Jakarta Sans, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="-1">
+      Nusantara<tspan fill="#00BAFF">.AI</tspan>
+    </text>
+    <text x="130" y="92" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="600" fill="#94A3B8" letter-spacing="3">
+      DATA ASSISTANT INDONESIA
+    </text>
+
+    <!-- Headline Tagline -->
+    <text x="0" y="210" font-family="Plus Jakarta Sans, sans-serif" font-size="46" font-weight="800" fill="#F8FAFC" letter-spacing="-1.5">
+      Asisten AI Cerdas Data Publik Nusantara
+    </text>
+    <text x="0" y="260" font-family="Plus Jakarta Sans, sans-serif" font-size="24" font-weight="500" fill="#CBD5E1">
+      Cuaca &amp; Gempa BMKG • Kurs BI • Kualitas Udara (AQI) • Wilayah &amp; BPS
+    </text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(0, 310)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="180" height="42" rx="21" fill="#00658D" fill-opacity="0.4" stroke="#00BAFF" stroke-opacity="0.4" stroke-width="1.5" />
+      <text x="90" y="26" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700" fill="#E2E8F0" text-anchor="middle">⚡ Real-time SSE</text>
+
+      <!-- Pill 2 -->
+      <rect x="195" y="0" width="180" height="42" rx="21" fill="#00658D" fill-opacity="0.4" stroke="#00BAFF" stroke-opacity="0.4" stroke-width="1.5" />
+      <text x="285" y="26" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700" fill="#E2E8F0" text-anchor="middle">🎙️ Voice Assistant</text>
+
+      <!-- Pill 3 -->
+      <rect x="390" y="0" width="190" height="42" rx="21" fill="#00658D" fill-opacity="0.4" stroke="#00BAFF" stroke-opacity="0.4" stroke-width="1.5" />
+      <text x="485" y="26" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700" fill="#E2E8F0" text-anchor="middle">🔌 MCP Server Ready</text>
+    </g>
+  </g>
+</svg>
