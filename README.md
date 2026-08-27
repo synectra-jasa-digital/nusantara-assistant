@@ -57,6 +57,8 @@ mcp-server/           server MCP (stdio) - expose lib/tools/* yang sama ke Claud
 lib/tools/            implementasi tiap sumber data (fetch murni, stateless)
 lib/toolSchemas.js    definisi tool (dipakai ulang untuk pemanggilan model & MCP)
 lib/toolDispatcher.js pemetaan nama tool -> fungsi + jenis kartu UI
+lib/proxyFetch.js     fetch lewat PROXY_URL kalau di-set, langsung kalau tidak
+proxy-worker/         Cloudflare Worker - kerja-around WAF block BI/BMKG (opsional)
 ```
 
 `lib/tools/*` sengaja dipisah dari `api/chat.js` supaya bisa dipakai ulang
@@ -83,6 +85,7 @@ npm run dev
 | `GROQ_MODEL`         | Tidak | Default `openai/gpt-oss-120b` kalau tidak diisi                   |
 | `BPS_API_KEY`        | Untuk tool statistik | Daftar gratis di https://webapi.bps.go.id/developer/ |
 | `IQAIR_API_KEY`      | Untuk tool kualitas udara | Daftar gratis (tier Community) di https://dashboard.iqair.com/ |
+| `PROXY_URL`          | Tidak | URL Cloudflare Worker buat kerja-around WAF block BI/BMKG - lihat [Setup proxy](#setup-proxy-opsional-buat-kerja-around-waf-block) |
 
 BMKG dan endpoint kurs JISDOR Bank Indonesia tidak butuh API key. Data
 wilayah administratif (`lib/tools/wilayah.js`) dibundel lokal sebagai CSV
@@ -152,8 +155,27 @@ Functions → lihat log `api/chat`. Kalau errornya berbentuk timeout atau
 
 Kalau itu terjadi, beberapa opsi mitigasi:
 - Jalankan ulang request itu, sebagian blokir sifatnya rate-limit sementara, bukan permanen.
-- Pakai proxy (misalnya Cloudflare Worker kecil) sebagai perantara antara Vercel dan API pemerintah, supaya request keluar dari IP yang berbeda.
+- Pakai proxy (Cloudflare Worker kecil) sebagai perantara antara Vercel dan API pemerintah, supaya request keluar dari IP yang berbeda - sudah disiapkan, lihat "Setup proxy" di bawah.
 - Untuk demo penting (wawancara kerja, presentasi), tes dulu H-1 supaya ada waktu pindah ke opsi proxy kalau ternyata diblokir.
+
+### Setup proxy (opsional, buat kerja-around WAF block)
+
+`proxy-worker/` berisi Cloudflare Worker kecil yang meneruskan request ke
+host tertentu (BI, BMKG, BPS) lewat IP Cloudflare, bukan IP Vercel -
+dipakai otomatis oleh `lib/tools/biKurs.js` dan `lib/tools/bmkgEarthquake.js`
+lewat `lib/proxyFetch.js` kalau env var `PROXY_URL` diisi. Kalau kosong,
+tool-tool itu tetap fetch langsung seperti biasa (default, tanpa proxy).
+
+```bash
+cd proxy-worker
+npx wrangler login              # sekali saja, butuh akun Cloudflare (gratis)
+npx wrangler deploy             # keluarkan URL worker, mis. https://nusantara-gov-proxy.<subdomain>.workers.dev
+```
+
+Set `PROXY_URL` ke URL worker itu di `.env` (lokal) dan di Vercel Project
+Settings → Environment Variables (production), lalu redeploy. Worker-nya
+membatasi tujuan cuma ke host yang sudah di-allowlist di
+`proxy-worker/index.js` (`ALLOWED_HOSTS`) - bukan open proxy bebas.
 
 **Field respons SOAP Bank Indonesia (`lib/tools/biKurs.js`) belum
 terverifikasi 100 persen di luar isu WAF di atas.** BI tidak
