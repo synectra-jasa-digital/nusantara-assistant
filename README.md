@@ -5,6 +5,7 @@
 ![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel&logoColor=white)
 ![MCP](https://img.shields.io/badge/MCP-Server-blue)
 ![Node](https://img.shields.io/badge/Node-%3E%3D18-339933?logo=node.js&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 Asisten chat AI yang menjawab pertanyaan seputar data publik Indonesia
 langsung dari sumber resminya: cuaca & gempa (BMKG), kurs referensi (Bank
@@ -25,6 +26,7 @@ tool-calling ke API/data asli.
 - [Security](#security)
 - [Catatan & Keterbatasan](#catatan--keterbatasan)
 - [Roadmap](#roadmap)
+- [Lisensi](#lisensi)
 
 ## Fitur
 
@@ -144,18 +146,17 @@ panjang teks, panjang parameter), supaya satu klien tidak bisa
 menghabiskan kuota Groq/BPS/IQAir atau bikin biaya Vercel membengkak
 hanya dengan spam request.
 
-**Ini bukan proteksi DDoS jaringan/volumetrik sungguhan** - itu tanggung
-jawab layer infrastruktur (Vercel sudah punya mitigasi dasar bawaan di
-edge-nya). Rate limiter di atas berbasis memori per instance serverless:
-efektif menahan satu sumber yang nge-hammer instance yang sama (skenario
-abuse paling umum), tapi tidak terkoordinasi lintas banyak instance
-serverless yang di-scale paralel, jadi bukan pengganti WAF/rate-limiting
-sungguhan kalau butuh proteksi terhadap serangan terdistribusi asli. Buat
-itu, opsi yang lebih kuat: Vercel Firewall (perlu plan Pro+), atau
-proxy-kan domain custom kamu lewat Cloudflare (free plan sudah termasuk
-DDoS protection & rate limiting di edge) - infrastruktur `proxy-worker/`
-di repo ini baru dipakai buat outbound request ke BI/BMKG, bukan buat
-inbound traffic ke app ini.
+**Ini bukan proteksi DDoS jaringan/volumetrik sungguhan.** Itu tanggung
+jawab layer infrastruktur — Vercel sudah punya mitigasi dasar bawaan di
+edge-nya. Rate limiter di atas berbasis memori per instance serverless:
+- Efektif menahan satu sumber yang nge-hammer instance yang sama (skenario abuse paling umum).
+- Tidak terkoordinasi lintas banyak instance serverless yang di-scale paralel, jadi bukan pengganti WAF/rate-limiting sungguhan untuk serangan terdistribusi asli.
+
+Untuk proteksi yang lebih kuat: **Vercel Firewall** (perlu plan Pro+),
+atau **proxy-kan domain custom lewat Cloudflare** (free plan sudah
+termasuk DDoS protection & rate limiting di edge). Catatan:
+`proxy-worker/` di repo ini baru dipakai untuk outbound request ke
+BI/BMKG, bukan untuk inbound traffic ke app ini.
 
 ## Catatan & Keterbatasan
 
@@ -225,3 +226,7 @@ berisiko berubah/diblokir sewaktu-waktu, jadi tidak dipakai di proyek ini.
 - [ ] Publish `@nusantara/mcp-server` ke npm registry (sudah disiapkan & diverifikasi, tinggal `npm publish` dengan akun yang punya akses scope `@nusantara`)
 - [ ] Terjemahkan isi `src/data/docsContent.js` ke bahasa Inggris (saat ini bilingual baru di UI chrome, isi dokumentasi masih bahasa Indonesia)
 - [ ] Cari sumber data resmi untuk harga pangan strategis (PIHPS) sebagai pengganti endpoint tidak resmi
+
+## Lisensi
+
+[MIT](LICENSE) © 2026 Khairul122
