@@ -4,23 +4,30 @@
 
 <p>Fitur &amp; Alur Utama:</p>
 <ul>
-<li>Tool-calling multi-sumber ke BMKG (cuaca dan gempa/autogempa), Bank Indonesia (kurs referensi JISDOR), wilayah administratif (offline dari dataset CSV lokal Permendagri), statistik BPS (inflasi, PDB, ketenagakerjaan), dan kualitas udara IQAir (AQI/ISPU, PM2.5).</li>
-<li>Streaming response kata demi kata lewat Server-Sent Events, lengkap dengan tombol hentikan generasi dan tahap <em>self-check</em> yang memverifikasi jawaban terhadap data tool sebelum dikirim ke layar.</li>
-<li>Visualisasi perbandingan otomatis berupa grafik batang interaktif ketika pengguna membandingkan data antar wilayah.</li>
-<li>Input dan output suara berbahasa Indonesia lewat Web Speech API bawaan peramban, tanpa dependensi tambahan.</li>
-<li>Panel API Playground pada halaman dokumentasi untuk menguji setiap tool secara langsung dan melihat respons JSON beserta tampilan kartunya.</li>
-<li>Server Model Context Protocol (MCP) yang mengekspos tool yang sama untuk dipakai langsung dari Claude Desktop, Claude Code, Cursor, atau editor pendukung MCP lainnya.</li>
-<li>Rate limiting dan pembatasan payload di setiap endpoint publik untuk mencegah penyalahgunaan kuota API.</li>
-<li>Arsitektur tanpa database - riwayat percakapan cukup hidup di state peramban.</li>
+<li><strong>Tool-calling multi-sumber</strong> ke lima sumber data resmi sekaligus:
+<ul>
+<li><strong>BMKG</strong> — cuaca terkini dan gempa bumi (autogempa).</li>
+<li><strong>Bank Indonesia</strong> — kurs referensi JISDOR.</li>
+<li><strong>Wilayah Administratif</strong> — provinsi hingga desa/kelurahan, offline dari dataset CSV lokal Permendagri.</li>
+<li><strong>BPS</strong> — statistik inflasi, PDB, dan ketenagakerjaan.</li>
+<li><strong>IQAir</strong> — kualitas udara AQI/ISPU dan PM2.5.</li>
+</ul>
+</li>
+<li><strong>Streaming response</strong> kata demi kata lewat Server-Sent Events, dengan tombol hentikan generasi dan tahap <em>self-check</em> yang memverifikasi jawaban terhadap data tool sebelum dikirim ke layar.</li>
+<li><strong>Visualisasi perbandingan otomatis</strong> berupa grafik batang interaktif ketika pengguna membandingkan data antar wilayah.</li>
+<li><strong>Voice I/O</strong> — input dan output suara berbahasa Indonesia lewat Web Speech API bawaan peramban, tanpa dependensi tambahan.</li>
+<li><strong>API Playground</strong> pada halaman dokumentasi untuk menguji setiap tool secara langsung dan melihat respons JSON beserta tampilan kartunya.</li>
+<li><strong>Server Model Context Protocol (MCP)</strong> yang mengekspos tool yang sama untuk dipakai langsung dari Claude Desktop, Claude Code, Cursor, atau editor pendukung MCP lainnya.</li>
+<li><strong>Rate limiting</strong> dan pembatasan payload di setiap endpoint publik untuk mencegah penyalahgunaan kuota API.</li>
+<li><strong>Tanpa database</strong> — riwayat percakapan cukup hidup di state peramban.</li>
 </ul>
 
 <p>Tech Stack:</p>
 <ul>
-<li>React 18 dan Vite untuk antarmuka frontend.</li>
-<li>Tailwind CSS untuk styling.</li>
-<li>Vercel Serverless Functions (Node.js) sebagai backend API, arsitektur stateless tanpa server yang perlu dikelola.</li>
-<li>Groq API dengan model GPT-OSS untuk kemampuan tool-calling dan percakapan berlatensi rendah.</li>
-<li>Model Context Protocol SDK untuk server MCP.</li>
-<li>Recharts (lazy-loaded) untuk visualisasi data perbandingan.</li>
-<li>Dataset CSV wilayah administratif lokal (Permendagri 72/2019) tanpa database eksternal.</li>
+<li><strong>Frontend:</strong> React 18, Vite, Tailwind CSS.</li>
+<li><strong>Backend:</strong> Vercel Serverless Functions (Node.js), arsitektur stateless tanpa server yang perlu dikelola.</li>
+<li><strong>AI Engine:</strong> Groq API dengan model GPT-OSS untuk tool-calling dan percakapan berlatensi rendah.</li>
+<li><strong>Protokol:</strong> Model Context Protocol SDK untuk server MCP.</li>
+<li><strong>Visualisasi:</strong> Recharts (lazy-loaded) untuk grafik perbandingan.</li>
+<li><strong>Data Wilayah:</strong> dataset CSV lokal (Permendagri 72/2019) tanpa database eksternal.</li>
 </ul>
