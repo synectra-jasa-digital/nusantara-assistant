@@ -22,6 +22,7 @@ tool-calling ke API/data asli.
 - [Environment Variables](#environment-variables)
 - [MCP Server](#mcp-server)
 - [Deploy ke Vercel](#deploy-ke-vercel)
+- [Security](#security)
 - [Catatan & Keterbatasan](#catatan--keterbatasan)
 - [Roadmap](#roadmap)
 
@@ -132,6 +133,29 @@ Naikkan versi di `mcp-server/package.json` sebelum publish ulang.
 2. Import project di Vercel, framework preset otomatis terdeteksi sebagai Vite.
 3. Set `GROQ_API_KEY`, `BPS_API_KEY`, dan `IQAIR_API_KEY` di Project Settings → Environment Variables.
 4. Deploy. Folder `/api` otomatis jadi serverless function, tidak perlu konfigurasi tambahan.
+
+## Security
+
+Setiap endpoint publik (`/api/chat`, `/api/playground`, `/api/translate`)
+punya **rate limiting per IP** (`lib/rateLimit.js`, in-memory - 20
+request/menit, 10/menit khusus untuk `/api/playground` karena langsung
+invoke tool tanpa lewat LLM) plus batas ukuran payload (jumlah pesan,
+panjang teks, panjang parameter), supaya satu klien tidak bisa
+menghabiskan kuota Groq/BPS/IQAir atau bikin biaya Vercel membengkak
+hanya dengan spam request.
+
+**Ini bukan proteksi DDoS jaringan/volumetrik sungguhan** - itu tanggung
+jawab layer infrastruktur (Vercel sudah punya mitigasi dasar bawaan di
+edge-nya). Rate limiter di atas berbasis memori per instance serverless:
+efektif menahan satu sumber yang nge-hammer instance yang sama (skenario
+abuse paling umum), tapi tidak terkoordinasi lintas banyak instance
+serverless yang di-scale paralel, jadi bukan pengganti WAF/rate-limiting
+sungguhan kalau butuh proteksi terhadap serangan terdistribusi asli. Buat
+itu, opsi yang lebih kuat: Vercel Firewall (perlu plan Pro+), atau
+proxy-kan domain custom kamu lewat Cloudflare (free plan sudah termasuk
+DDoS protection & rate limiting di edge) - infrastruktur `proxy-worker/`
+di repo ini baru dipakai buat outbound request ke BI/BMKG, bukan buat
+inbound traffic ke app ini.
 
 ## Catatan & Keterbatasan
 

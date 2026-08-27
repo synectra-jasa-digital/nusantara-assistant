@@ -1,5 +1,9 @@
 import { toolSchemas } from '../lib/toolSchemas.js'
 import { runTool } from '../lib/toolDispatcher.js'
+import { clientIp, isRateLimited } from '../lib/rateLimit.js'
+
+const MAX_MESSAGES = 40
+const MAX_MESSAGE_LENGTH = 4000
 
 const SYSTEM_PROMPT = `Kamu adalah asisten yang menjawab pertanyaan seputar data publik Indonesia: cuaca dan gempa BMKG, kurs referensi Bank Indonesia, wilayah administratif, statistik BPS, dan kualitas udara.
 Selalu pakai tool yang tersedia untuk mengambil data nyata, jangan pernah mengarang angka.
@@ -154,6 +158,11 @@ export default async function handler(req, res) {
     return
   }
 
+  if (isRateLimited(clientIp(req))) {
+    res.status(429).json({ error: 'Terlalu banyak permintaan, coba lagi sebentar.' })
+    return
+  }
+
   const apiKey = process.env.GROQ_API_KEY
   if (!apiKey) {
     res.status(500).json({ error: 'GROQ_API_KEY belum diset di environment variables.' })
@@ -163,6 +172,14 @@ export default async function handler(req, res) {
   const { messages } = req.body ?? {}
   if (!Array.isArray(messages) || messages.length === 0) {
     res.status(400).json({ error: '"messages" wajib diisi sebagai array.' })
+    return
+  }
+  if (messages.length > MAX_MESSAGES) {
+    res.status(400).json({ error: `Percakapan terlalu panjang (maks ${MAX_MESSAGES} pesan).` })
+    return
+  }
+  if (messages.some((m) => typeof m.content !== 'string' || m.content.length > MAX_MESSAGE_LENGTH)) {
+    res.status(400).json({ error: `Setiap pesan maks ${MAX_MESSAGE_LENGTH} karakter.` })
     return
   }
 
