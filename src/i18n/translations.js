@@ -19,6 +19,8 @@ export const translations = {
     chat_placeholder: 'Tanyakan seputar data Indonesia...',
     chat_send: 'Kirim',
     chat_stop: 'Hentikan',
+    chat_voice_input: 'Bicara',
+    chat_listen: 'Dengarkan',
     chat_empty_title: 'Halo! Ada yang bisa saya bantu?',
     chat_empty_subtitle: 'Tanyakan tentang cuaca, data penduduk, ekonomi, atau informasi wilayah di seluruh Indonesia.',
     chat_examples: [
@@ -79,6 +81,8 @@ export const translations = {
     chat_placeholder: 'Ask about Indonesian data...',
     chat_send: 'Send',
     chat_stop: 'Stop',
+    chat_voice_input: 'Speak',
+    chat_listen: 'Listen',
     chat_empty_title: 'Hi! How can I help?',
     chat_empty_subtitle: 'Ask about weather, population data, economics, or regional info across Indonesia.',
     chat_examples: [

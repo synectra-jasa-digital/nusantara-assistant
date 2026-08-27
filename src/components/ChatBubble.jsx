@@ -1,4 +1,4 @@
-import { Suspense, lazy } from 'react'
+import { Suspense, lazy, useState } from 'react'
 import { useLanguage } from '../i18n/LanguageContext.jsx'
 import Icon from './Icon.jsx'
 import WeatherCard from './cards/WeatherCard.jsx'
@@ -20,9 +20,28 @@ const CARD_COMPONENTS = {
   chart: ChartCard,
 }
 
+const canSpeak = typeof window !== 'undefined' && 'speechSynthesis' in window
+
 export default function ChatBubble({ role, content, cards = [] }) {
   const { t } = useLanguage()
   const isUser = role === 'user'
+  const [isSpeaking, setIsSpeaking] = useState(false)
+
+  function toggleSpeak() {
+    if (isSpeaking) {
+      window.speechSynthesis.cancel()
+      setIsSpeaking(false)
+      return
+    }
+    if (!content) return
+    window.speechSynthesis.cancel()
+    const utterance = new SpeechSynthesisUtterance(content)
+    utterance.lang = 'id-ID'
+    utterance.onend = () => setIsSpeaking(false)
+    utterance.onerror = () => setIsSpeaking(false)
+    setIsSpeaking(true)
+    window.speechSynthesis.speak(utterance)
+  }
 
   if (isUser) {
     return (
@@ -41,6 +60,18 @@ export default function ChatBubble({ role, content, cards = [] }) {
           <Icon name="smart_toy" filled className="text-sm" />
         </div>
         <span>{t('appName')}</span>
+        {canSpeak && content && (
+          <button
+            type="button"
+            onClick={toggleSpeak}
+            aria-label={t('chat_listen')}
+            className={`ml-1 flex h-6 w-6 items-center justify-center rounded-lg transition-colors ${
+              isSpeaking ? 'bg-primary/20 text-primary' : 'text-on-surface-variant hover:text-primary'
+            }`}
+          >
+            <Icon name={isSpeaking ? 'stop_circle' : 'volume_up'} className="text-sm" />
+          </button>
+        )}
       </div>
       <div className="max-w-[95%] whitespace-pre-wrap rounded-2xl rounded-tl-xs border border-outline-variant/60 bg-surface-container-lowest p-4 text-sm text-on-surface shadow-sm sm:max-w-[80%] sm:p-5">
         <div className="leading-relaxed">{content}</div>
