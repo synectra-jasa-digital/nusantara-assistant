@@ -28,13 +28,25 @@ npm run dev`,
     title: 'Konfigurasi MCP',
     badge: null,
     body: [
-      'Fungsi di folder lib/tools juga bisa dipakai ulang sebagai MCP server terpisah, bukan cuma lewat endpoint chat ini. Bungkus tiap fungsi sebagai satu MCP tool dengan @modelcontextprotocol/sdk supaya bisa dipanggil langsung dari Claude Desktop atau Claude Code.',
+      'Fungsi di folder lib/tools juga bisa dipakai ulang sebagai MCP server terpisah, bukan cuma lewat endpoint chat ini. Bungkus tiap fungsi sebagai satu MCP tool dengan @modelcontextprotocol/sdk supaya bisa dipanggil langsung dari Claude Desktop, Claude Code, Cursor, atau Antigravity IDE.',
+      'Opsi 1: clone repo ini lalu jalankan langsung. Opsi 2: tanpa clone, lewat package @nusantara/mcp-server di npm.',
     ],
-    code: `{
+    code: `// Opsi 1 - clone repo
+{
   "mcpServers": {
     "data-nusantara": {
       "command": "node",
       "args": ["./mcp-server/index.js"]
+    }
+  }
+}
+
+// Opsi 2 - npm package
+{
+  "mcpServers": {
+    "nusantara-data": {
+      "command": "npx",
+      "args": ["-y", "@nusantara/mcp-server"]
     }
   }
 }`,

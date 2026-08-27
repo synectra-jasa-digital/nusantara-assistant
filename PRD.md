@@ -144,4 +144,5 @@ Membungkus dan mempublikasikan repositori `mcp-server/index.js` ke registri NPM 
 - [x] **Pelaksanaan Fase 1 (Streaming & Visualisasi)**: Selesai - `api/chat.js` (SSE streaming + self-check pass + tombol Stop Generation), `src/components/cards/ChartCard.jsx` (Recharts, lazy-loaded)
 - [x] **Fase 2 (AQI)**: Selesai & terverifikasi live dengan data real (AQI Jakarta = 156, PM2.5). `lib/tools/aqi.js` (IQAir API), `AqiCard.jsx`. PIHPS di-skip (tidak ada API resmi pihak ketiga dari BI, dikonfirmasi user)
 - [x] **Fase 3 (Voice I/O)**: Selesai - mic (Speech-to-Text, `id-ID`) di `ChatInput.jsx`, speaker (Text-to-Speech) di `ChatBubble.jsx`, Web Speech API native, tanpa dependency/key baru. Terverifikasi di browser (Chrome).
-- [ ] **Fase 4 (API Playground & publish NPM)**: Belum dikerjakan
+- [x] **Fase 4a (API Playground)**: Selesai & terverifikasi live - `api/playground.js`, `ApiPlayground.jsx`, `cardRegistry.js`. Dites di browser (get_air_quality: Surabaya AQI 62, JSON + AqiCard tampil benar)
+- [x] **Fase 4b (Publish NPM)**: Package `@nusantara/mcp-server` sudah disiapkan & diverifikasi standalone (`mcp-server/package.json`, `scripts/build-mcp-package.sh`) - BELUM benar-benar di-publish, perlu `npm login` dengan akun/akses scope `@nusantara` milik user (agent tidak punya kredensial npm)

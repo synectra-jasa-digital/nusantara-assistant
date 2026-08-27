@@ -1,0 +1,36 @@
+{
+  "name": "@nusantara/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for Indonesian public data: BMKG weather & earthquakes, Bank Indonesia exchange rates, administrative regions, BPS statistics, IQAir air quality.",
+  "type": "module",
+  "bin": {
+    "nusantara-mcp": "index.js"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "fast-xml-parser": "^4.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/synectra-jasa-digital/nusantara-assistant.git",
+    "directory": "mcp-server"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "bmkg",
+    "indonesia",
+    "weather",
+    "bps",
+    "bank-indonesia"
+  ]
+}

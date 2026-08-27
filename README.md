@@ -24,6 +24,25 @@ Dokumentasi > Konfigurasi MCP di aplikasi untuk config client-nya.
 npm run mcp   # jalankan MCP server lewat stdio
 ```
 
+### Publish `@nusantara/mcp-server` ke npm
+
+`mcp-server/index.js` mengimport `../lib/*` (di luar folder `mcp-server/`),
+jadi tidak bisa langsung di-publish apa adanya - `scripts/build-mcp-package.sh`
+menyalin `lib/toolSchemas.js`, `lib/toolDispatcher.js`, `lib/tools/*`, dan
+`lib/data/wilayah/*.csv` ke `mcp-server/dist-npm/` (sudah di-gitignore) dengan
+import path yang disesuaikan, supaya hasilnya jadi package berdiri sendiri.
+Sudah diverifikasi jalan standalone (node_modules terisolasi, terpisah dari
+monorepo ini).
+
+```bash
+npm login                          # sekali saja, butuh akun npm & akses scope @nusantara
+bash scripts/build-mcp-package.sh
+cd mcp-server/dist-npm
+npm publish --access public
+```
+
+Naikkan versi di `mcp-server/package.json` sebelum publish ulang.
+
 ## Menjalankan secara lokal
 
 ```bash
